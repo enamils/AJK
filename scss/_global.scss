@@ -32,9 +32,13 @@ h6 {
 section {
   padding: 100px 0;
   h2.section-heading {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 15px;
+
+    @media(min-width: 768px) {
+      font-size: 40px;
+    }
   }
   h3.section-subheading {
     font-size: 16px;
@@ -63,8 +67,8 @@ section {
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  background-color: $orange-ajk;
+  border-color: $orange-ajk;
   &:active,
   &:focus,
   &:hover {
@@ -95,4 +99,8 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+footer {
+  background-color: $red-bordeau-ajk;
 }

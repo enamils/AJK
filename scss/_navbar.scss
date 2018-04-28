@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $red-bordeau-ajk;
+  background-color: $black-ajk;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -9,7 +9,7 @@
     color: white;
     border: 0;
     background-color: $orange-ajk;
-    @include heading-font;
+    //@include heading-font;
   }
   .navbar-brand {
     color: $orange-ajk;
@@ -30,13 +30,13 @@
     }
   }
   .navbar-nav {
-    @media(max-width: 767px) {
+    @include mediaQuery(tablet-end) {
       margin-top: 1em;
     }
     .nav-item {
       .nav-link {
         font-size: 90%;
-        font-weight: 700;
+        font-weight: 600;
         letter-spacing: 1px;
         color: white;
         @include heading-font;
@@ -48,7 +48,8 @@
     }
   }
 }
-@media(min-width:992px) {
+
+@include mediaQuery(tablet-desktop) {
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -76,7 +77,9 @@
     }
     &.navbar-shrink {
       padding: .5em;
-      background-color: $red-bordeau-ajk;
+      background-color: $black-ajk;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
       .navbar-brand {
         &.logo-ajk {
           width: 60px;
@@ -87,7 +90,7 @@
   }
 }
 
-@media(min-width:1024px) {
+@include mediaQuery(desktop) {
   #mainNav {
     .navbar-nav {
       .nav-item {
@@ -108,7 +111,7 @@
   }
 }
 
-@media(min-width:1200px) {
+@include mediaQuery(desktop-wide) {
   #mainNav {
     .navbar-nav {
       .nav-item {

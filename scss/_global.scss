@@ -16,7 +16,7 @@ a {
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $orange-ajk !important;
 }
 
 h1,
@@ -35,8 +35,9 @@ section {
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 15px;
+    color: $orange-ajk;
 
-    @media(min-width: 768px) {
+    @include mediaQuery(tablet) {
       font-size: 40px;
     }
   }
@@ -44,12 +45,13 @@ section {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 75px;
+    margin-top: 45px;
+    margin-bottom: 40px;
     text-transform: none;
     @include serif-font;
   }
 }
-@media(min-width:768px) {
+@include mediaQuery(tablet) {
   section {
     padding: 150px 0;
   }
@@ -82,6 +84,28 @@ section {
   }
 }
 
+.text-color {
+  &_orange {
+    @include text-color($orange-ajk);
+  }
+
+  &_black {
+    @include text-color($black-ajk);
+  }
+
+  &_green {
+    @include text-color($green-ajk);
+  }
+
+  &_beige {
+    @include text-color($beige-ajk);
+  }
+
+  &_white {
+    @include text-color($white);
+  }
+}
+
 // Highlight color customization
 ::-moz-selection {
   background: $primary;
@@ -101,6 +125,19 @@ img::-moz-selection {
   background: transparent;
 }
 
-footer {
-  background-color: $red-bordeau-ajk;
+img {
+  &.responsive-img {
+    max-width: 40%;
+    @include mediaQuery(desktop-wide) {
+      max-width: 20%;
+    }
+  }
+  &.responsive-map-img {
+    max-width: 65%;
+  }
 }
+
+footer {
+  background-color: $black-ajk;
+}
+

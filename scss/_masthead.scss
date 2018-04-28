@@ -27,7 +27,8 @@ header.masthead {
     }
   }
 }
-@media(min-width:768px) {
+
+@include mediaQuery(tablet) {
   header.masthead {
     .intro-text {
       padding-top: 300px;
@@ -40,7 +41,7 @@ header.masthead {
         @include serif-font;
       }
       .intro-heading {
-        font-size: 75px;
+        font-size: 65px;
         font-weight: 700;
         line-height: 75px;
         margin-bottom: 50px;

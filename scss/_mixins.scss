@@ -20,3 +20,56 @@
 @mixin heading-font {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+// Mixin for media Query
+
+@mixin mediaQuery($mediaQuery) {
+  @if $mediaQuery==mobile {
+    @media only screen and (min-width: $mobile) {
+      @content;
+    }
+  }
+  @else if $mediaQuery==mobile-landscape {
+    @media only screen and (min-width: $mobile-landscape) {
+      @content;
+    }
+  }
+  @else if $mediaQuery==mobile-end {
+    @media only screen and (max-width: $mobile-end) {
+      @content;
+    }
+  }
+  @else if $mediaQuery==tablet {
+    @media only screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  @else if $mediaQuery==tablet-end {
+    @media only screen and (max-width: $tablet-end) {
+      @content;
+    }
+  }
+  @else if $mediaQuery==tablet-desktop {
+    @media only screen and (min-width: $tablet-desktop) {
+      @content;
+    }
+  }
+  @else if $mediaQuery==desktop {
+    @media only screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+  @else if $mediaQuery==desktop-end {
+    @media only screen and (max-width: $desktop-end) {
+      @content;
+    }
+  }
+  @else if $mediaQuery==desktop-wide {
+    @media only screen and (min-width: $desktop-wide) {
+      @content;
+    }
+  }
+}
+
+@mixin text-color($text-color) {
+  color: $text-color;
+}

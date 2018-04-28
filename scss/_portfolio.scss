@@ -17,7 +17,7 @@
         -moz-transition: all ease 0.5s;
         transition: all ease 0.5s;
         opacity: 0;
-        background: fade-out($primary, .1);
+        background: fade-out($orange-ajk, .1);
         &:hover {
           opacity: 1;
         }
@@ -43,12 +43,14 @@
     .portfolio-caption {
       max-width: 400px;
       margin: 0 auto;
+      min-height: 135px;
       padding: 25px;
       text-align: center;
       background-color: $white;
       h4 {
         margin: 0;
         text-transform: none;
+        font-size: 18px;
       }
       p {
         font-size: 16px;
@@ -62,7 +64,8 @@
     z-index: 2;
   }
 }
-@media(min-width:767px) {
+
+@include mediaQuery(mobile-end) {
   #portfolio {
     .portfolio-item {
       margin: 0 0 30px;
@@ -124,7 +127,7 @@
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
-      background-color: $gray-900;
+      background-color: $orange-ajk;
       .rl {
         /* Safari and Chrome */
         z-index: 1052;
@@ -134,7 +137,7 @@
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        background-color: $gray-900;
+        background-color: $orange-ajk;
       }
     }
   }

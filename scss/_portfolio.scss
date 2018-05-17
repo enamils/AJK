@@ -17,7 +17,7 @@
         -moz-transition: all ease 0.5s;
         transition: all ease 0.5s;
         opacity: 0;
-        background: fade-out($orange-ajk, .1);
+        background: fade-out($green-ajk, .1);
         &:hover {
           opacity: 1;
         }
@@ -51,6 +51,7 @@
         margin: 0;
         text-transform: none;
         font-size: 18px;
+        color: $blue-ajk;
       }
       p {
         font-size: 16px;

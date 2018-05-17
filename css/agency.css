@@ -96,7 +96,7 @@ section h3.section-subheading {
 }
 
 .text-color_green {
-  color: #d2ebcd;
+  color: #d0ef84;
 }
 
 .text-color_beige {
@@ -575,8 +575,9 @@ em,
   height: 1%;
 }
 
-.clearfix {
-  display: block;
+.listNone {
+  list-style-type: none;
+  padding: 0;
 }
 
 @media only screen and (min-width: 320px) {
@@ -2168,6 +2169,8 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+  color: #52bad5;
+  font-size: 20px;
 }
 
 .association p {
@@ -2195,7 +2198,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(229, 154, 71, 0.9);
+  background: rgba(208, 239, 132, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -2235,6 +2238,7 @@ header.masthead .intro-text .intro-heading {
   margin: 0;
   text-transform: none;
   font-size: 18px;
+  color: #52bad5;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
@@ -2436,11 +2440,17 @@ header.masthead .intro-text .intro-heading {
 
 .timeline .timeline-heading h4 {
   margin-top: 0;
-  color: #d2ebcd;
+  font-size: 20px;
+  color: #52bad5;
 }
 
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
+}
+
+.timeline .timeline-heading .date-title {
+  color: #d0ef84;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .timeline .timeline-body > ul,
@@ -2541,6 +2551,11 @@ header.masthead .intro-text .intro-heading {
 
 .team-member p {
   margin-top: 0;
+}
+
+.project h4 {
+  color: #52bad5;
+  font-size: 20px;
 }
 
 section#contact {

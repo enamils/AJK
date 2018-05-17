@@ -86,10 +86,15 @@
   .timeline-heading {
     h4 {
       margin-top: 0;
-      color: $green-ajk;
+      font-size: 20px;
+      color: $blue-ajk;
       &.subheading {
         text-transform: none;
       }
+    }
+    .date-title {
+      color: $green-ajk;
+      @include heading-font;
     }
   }
   .timeline-body {

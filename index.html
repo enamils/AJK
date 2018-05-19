@@ -87,7 +87,7 @@
           </div>
             <div class="col-lg-12">
               <p>
-                L’Association des Jeunes de Kakandé est une association à but non lucratif créée par l’initiative de jeune français d’origine guinéenne souhaitant contribuer
+                L’Association des Jeunes de Kakandé (AJK) est une association à but non lucratif créée par l’initiative de jeune français d’origine guinéenne souhaitant contribuer
                 au développement du village de leurs parents. L’association compte plusieurs profils variés comme des développeurs informatique,
                 des commerciaux, graphistes, ressources humaines, éducateurs, etc. L’AJK a pour vocation de mener des projets humanitaires
                 dans des domaines de premières nécessités tels que la santé, l’éducation, mais aussi tout ce qui contribue au développement
@@ -486,7 +486,7 @@
           </div>
           <div class="col-lg-12">
             <h3 class="section-subheading text-muted">Le Projet</h3>
-            <p>L’AJK (Association des Jeunes de Kakande) en collaboration avec UCUD (Union de la Communauté Urbaine de Dabankou) a pour
+            <p>L’AJK en collaboration avec UCUD (Union de la Communauté Urbaine de Dabankou) a pour
               objectif la réalisation d’un poste de santé à Dabankou afin de pallier aux besoins médicaux des habitants. Nous souhaitons
               assurer un poste de santé pourvu en équipements nécessaires à une prise en charge correcte et réglementée, accessible pour
               tous les habitants de Dabankou et les villages alentours. À travers ce projet, l’association souhaite faire prendre conscience
@@ -539,20 +539,56 @@
     <section id="donation">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 mb2">
             <h2 class="section-heading text-uppercase text-center">Nous soutenir</h2>
-            <h3 class="section-subheading text-muted">Adhérer à l'association</h3>
           </div>
           <div class="col-lg-12">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae dicta vel expedita ab nemo saepe eveniet at quos placeat provident sequi dolorum quis, similique quisquam quas deleniti totam dignissimos!</p>
+              <p class="bold">Vous pouvez être adhérents :</p>
+              <ul>
+                  <li>Ils s’acquittent d’une cotisation adhésion de 10€ contre remise d’une carte d’adhésion valable 1an.</li>
+                  <li>Ils participent activement à la mise en place des projets et au bon fonctionnement de l’association. </li>
+              </ul>
+              <p class="bold">Ou Bénévole (sympathisant) :</p>
+              <ul>
+                  <li>Les personnes qui aident l’association, sans désirer y adhérer.</li>
+                  <li>Ils ne disposent d’aucun droit, et ne sont donc tenus par aucune obligation.</li>
+                  <li>Leur participation aux activités de l’association doit toujours être soumise aux chefs de projet.</li>
+              </ul>
           </div>
-          <div class="col-lg-12">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id modi deserunt dolor corporis cumque libero inventore aliquam accusamus? Vero aut expedita ratione vel voluptatum totam a exercitationem consectetur rem!</p>
-          </div>
-          <div class="col-lg-12">
-            <h3 class="section-subheading text-muted">Faire un don</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas vel dolorum tenetur eligendi labore reprehenderit natus optio quam veniam molestias quo omnis voluptates, accusantium illo sit quasi eius. Id!</p>
-          </div>
+            <div class="col-lg-12">
+                <h3 class="section-subheading text-muted">Comment adhérer ? </h3>
+                <p class="bold">Par courrier :</p>
+                <p>Vous devez remplir le formulaire ci-dessous et l'envoyer à l'adresse suivante :</p>
+                <p>
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-download fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                  <a href=#>Formulaire d'inscription AJK à télécharger</a>
+                </p>
+                <p>Association des Jeunes de Kakandé
+                    <br>
+                    15 Passage du Poteau
+                    <br>
+                    75018 Paris
+                    <br>
+                    Tél : 01 01 01 01 01
+                </p>
+                <p>Conformément à la décision de l’Assemblée Générale du 11 septembre 2016, le montant de l’adhésion a été fixé à 10€.</p>
+            </div>
+              <div class="col-lg-12">
+                <h3 class="section-subheading text-muted">Faire un don</h3>
+                <p>Formulaire de DONS</p>
+
+                <div class="slider-nav">
+                  <img src="img/ajk-bg/ajk-bg-1.JPG" alt="">
+                  <img src="img/ajk-bg/ajk-bg-2.JPG" alt="">
+                  <img src="img/ajk-bg/ajk-bg-3.JPG" alt="">
+                  <img src="img/ajk-bg/ajk-bg-2.JPG" alt="">
+                  <img src="img/ajk-bg/ajk-bg-1.JPG" alt="">
+                  <img src="img/ajk-bg/ajk-bg-3.JPG" alt="">
+                </div>
+              </div>
         </div>
       </div>
     </section>
@@ -929,6 +965,38 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    <script src="js/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider-nav').slick({
+                centerMode: true,
+                centerPadding: '50px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 
   </body>
 

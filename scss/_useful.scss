@@ -411,6 +411,10 @@ em,
     text-decoration: none;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -448,4 +452,13 @@ em,
 .listNone {
     list-style-type: none;
     padding: 0;
+}
+
+.listTypeCircle {
+    list-style-type: circle;
+    padding: 0;
+}
+
+.listTypeCirclePadding {
+    list-style-type: circle;
 }

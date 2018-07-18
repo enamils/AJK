@@ -9,6 +9,7 @@
     color: white;
     border: 0;
     background-color: $orange-ajk;
+    font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
     //@include heading-font;
   }
   .navbar-brand {
@@ -39,7 +40,8 @@
         font-weight: 600;
         letter-spacing: 1px;
         color: white;
-        @include heading-font;
+        font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+        // @include heading-font;
         &.active,
         &:hover {
           color: $yellow-ajk;

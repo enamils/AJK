@@ -62,6 +62,7 @@
         margin-top: 12px;
       }
     }
+
     &.timeline-inverted > .timeline-panel {
       float: right;
       padding: 0 20px 0 100px;
@@ -83,13 +84,15 @@
       margin-bottom: 0;
     }
   }
+
   .timeline-heading {
     h4 {
       margin-top: 0;
       font-size: 20px;
-      color: $blue-ajk;
+      color: $orange-ajk;
       &.subheading {
         text-transform: none;
+        font-family: 'Caviar Dreams';
       }
     }
     .date-title {
@@ -97,6 +100,7 @@
       @include heading-font;
     }
   }
+
   .timeline-body {
      > ul,
     > p {
@@ -104,7 +108,8 @@
     }
   }
 }
-@media(min-width:768px) {
+
+@include mediaQuery(tablet) {
   .timeline {
     &:before {
       left: 50%;
@@ -137,7 +142,8 @@
     }
   }
 }
-@media(min-width:992px) {
+
+@include mediaQuery(tablet-desktop) {
   .timeline {
     > li {
       min-height: 150px;
@@ -160,7 +166,7 @@
     }
   }
 }
-@media(min-width:1200px) {
+@include mediaQuery(desktop-wide) {
   .timeline {
     > li {
       min-height: 170px;

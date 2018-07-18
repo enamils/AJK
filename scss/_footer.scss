@@ -3,10 +3,11 @@ footer {
   padding: 25px 0;
   text-align: center;
   span.copyright {
-    font-size: 90%;
+    font-size: 80%;
     line-height: 40px;
     text-transform: none;
-    @include heading-font;
+    // @include heading-font;
+    font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
   }
   ul.quicklinks {
     font-size: 90%;

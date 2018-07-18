@@ -20,6 +20,15 @@
 @mixin heading-font {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+@mixin caviar-dream {
+  @font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../fonts/CaviarDreams-BoldItalic.eot');
+    src: url('../fonts/CaviarDreams-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/CaviarDreams-BoldItalic.woff') format('woff'), url('../fonts/CaviarDreams-BoldItalic.ttf') format('truetype'), url('../fonts/CaviarDreams-BoldItalic.svg#CaviarDreams-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+  }
+}
 // Mixin for media Query
 
 @mixin mediaQuery($mediaQuery) {

@@ -5,11 +5,11 @@ body {
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.85;
 }
 
 a {
-  color: $primary;
+  color: $blue-ajk;
   &:hover {
     color: darken($primary, 10%);
   }
@@ -33,12 +33,14 @@ section {
   padding: 100px 0;
   h2.section-heading {
     font-size: 30px;
+    font-family: 'Caviar Dreams';
     margin-top: 0;
     margin-bottom: 15px;
     color: $orange-ajk;
 
     @include mediaQuery(tablet) {
       font-size: 40px;
+      font-family: 'Caviar Dreams';
     }
   }
   h3.section-subheading {
@@ -50,6 +52,7 @@ section {
     text-transform: none;
     @include serif-font;
   }
+  
 }
 @include mediaQuery(tablet) {
   section {
@@ -128,16 +131,39 @@ img::-moz-selection {
 img {
   &.responsive-img {
     max-width: 40%;
+    @include mediaQuery(tablet) {
+      max-width: 25%;
+    }
     @include mediaQuery(desktop-wide) {
-      max-width: 20%;
+      max-width: 15%;
     }
   }
   &.responsive-map-img {
-    max-width: 65%;
+    max-width: 45%;
   }
+  &.responsive-img-maquette {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  &.responsive-img-other {
+    max-width: 100%;
+  }
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+strong {
+  color: $orange-ajk;
+  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
 }
 
 footer {
   background-color: $black-ajk;
+}
+
+.roundbox {
+  border-radius: 50%;
 }
 

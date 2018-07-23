@@ -12,23 +12,21 @@ header.masthead {
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      @include serif-font;
     }
     .intro-heading {
-      font-size: 40px;
+      font-size: 20px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      // @include heading-font;
       @include mediaQuery(desktop-wide) {
         font-size: 50px;
       }
     }
     h1 {
-      font-size: 17px;
+      font-size: 30px;
       font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
       margin-bottom: 25px;
-      color: $beige-ajk;
+      color: $black-ajk;
     }
   }
 }
@@ -39,22 +37,21 @@ header.masthead {
       padding-top: 230px;
       padding-bottom: 200px;
       .intro-lead-in {
-        font-size: 40px;
+        font-size: 30px;
         font-style: italic;
         line-height: 40px;
-        margin-bottom: 25px;
-        @include serif-font;
+        margin-bottom: 10px;
       }
       .intro-heading {
-        font-size: 65px;
+        font-size: 25px;
         font-weight: 700;
         line-height: 75px;
-        // @include heading-font;
         font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
       }
       h1 {
-        font-size: 25px;
+        font-size: 50px;
         font-family: 'Caviar Dreams','Roboto Slab', Arial;
+        margin-top: 30px;
         margin-bottom: 50px;
         color: $black-ajk;
       }

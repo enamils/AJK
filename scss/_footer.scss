@@ -6,7 +6,6 @@ footer {
     font-size: 80%;
     line-height: 40px;
     text-transform: none;
-    // @include heading-font;
     font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
   }
   ul.quicklinks {
@@ -14,7 +13,6 @@ footer {
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
-    @include heading-font;
   }
 }
 
@@ -28,7 +26,6 @@ ul.social-buttons {
       width: 40px;
       height: 40px;
       -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
       transition: all 0.3s;
       color: white;
       border-radius: 100%;

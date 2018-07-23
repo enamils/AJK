@@ -14,7 +14,6 @@
   }
   .navbar-brand {
     color: $orange-ajk;
-    @include script-font;
     &.active,
     &:active,
     &:focus,
@@ -56,13 +55,11 @@
     padding-top: 25px;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
     .navbar-brand {
       -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
       transition: all 0.3s;
       &.logo-ajk {
         width: 150px;

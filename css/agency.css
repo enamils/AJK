@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -27,7 +27,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -56,7 +55,6 @@ section h3.section-subheading {
   margin-top: 45px;
   margin-bottom: 40px;
   text-transform: none;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -66,7 +64,6 @@ section h3.section-subheading {
 }
 
 .btn {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -710,110 +707,90 @@ em,
     margin-top: 0;
   }
   .mt1-s320 {
-    margin-top: 16px;
     margin-top: 1rem;
   }
   .mt2-s320 {
-    margin-top: 32px;
     margin-top: 2rem;
   }
   .mr0-s320 {
     margin-right: 0;
   }
   .mr1-s320 {
-    margin-right: 16px;
     margin-right: 1rem;
   }
   .mr2-s320 {
-    margin-right: 32px;
     margin-right: 2rem;
   }
   .mb0-s320 {
     margin-bottom: 0;
   }
   .mb1-s320 {
-    margin-bottom: 16px;
     margin-bottom: 1rem;
   }
   .mb2-s320 {
-    margin-bottom: 32px;
     margin-bottom: 2rem;
   }
   .ml0-s320 {
     margin-left: 0;
   }
   .ml1-s320 {
-    margin-left: 16px;
     margin-left: 1rem;
   }
   .ml2-s320 {
-    margin-left: 32px;
     margin-left: 2rem;
   }
   .m0-s320 {
     margin: 0;
   }
   .m1-s320 {
-    margin: 16px;
     margin: 1rem;
   }
   .m2-s320 {
-    margin: 32px;
     margin: 2rem;
   }
   .pt0-s320 {
     padding-top: 0;
   }
   .pt1-s320 {
-    padding-top: 16px;
     padding-top: 1rem;
   }
   .pt2-s320 {
-    padding-top: 32px;
     padding-top: 2rem;
   }
   .pr0-s320 {
     padding-right: 0;
   }
   .pr1-s320 {
-    padding-right: 16px;
     padding-right: 1rem;
   }
   .pr2-s320 {
-    padding-right: 32px;
     padding-right: 2rem;
   }
   .pb0-s320 {
     padding-bottom: 0;
   }
   .pb1-s320 {
-    padding-bottom: 16px;
     padding-bottom: 1rem;
   }
   .pb2-s320 {
-    padding-bottom: 32px;
     padding-bottom: 2rem;
   }
   .pl0-s320 {
     padding-left: 0;
   }
   .pl1-s320 {
-    padding-left: 16px;
     padding-left: 1rem;
   }
   .pl2-s320 {
-    padding-left: 32px;
     padding-left: 2rem;
   }
   .p0-s320 {
     padding: 0;
   }
   .p1-s320 {
-    padding: 16px;
     padding: 1rem;
   }
   .p2-s320 {
-    padding: 32px;
     padding: 2rem;
   }
   .w1-s320 {
@@ -985,110 +962,90 @@ em,
     margin-top: 0;
   }
   .mt1-s480 {
-    margin-top: 16px;
     margin-top: 1rem;
   }
   .mt2-s480 {
-    margin-top: 32px;
     margin-top: 2rem;
   }
   .mr0-s480 {
     margin-right: 0;
   }
   .mr1-s480 {
-    margin-right: 16px;
     margin-right: 1rem;
   }
   .mr2-s480 {
-    margin-right: 32px;
     margin-right: 2rem;
   }
   .mb0-s480 {
     margin-bottom: 0;
   }
   .mb1-s480 {
-    margin-bottom: 16px;
     margin-bottom: 1rem;
   }
   .mb2-s480 {
-    margin-bottom: 32px;
     margin-bottom: 2rem;
   }
   .ml0-s480 {
     margin-left: 0;
   }
   .ml1-s480 {
-    margin-left: 16px;
     margin-left: 1rem;
   }
   .ml2-s480 {
-    margin-left: 32px;
     margin-left: 2rem;
   }
   .m0-s480 {
     margin: 0;
   }
   .m1-s480 {
-    margin: 16px;
     margin: 1rem;
   }
   .m2-s480 {
-    margin: 32px;
     margin: 2rem;
   }
   .pt0-s480 {
     padding-top: 0;
   }
   .pt1-s480 {
-    padding-top: 16px;
     padding-top: 1rem;
   }
   .pt2-s480 {
-    padding-top: 32px;
     padding-top: 2rem;
   }
   .pr0-s480 {
     padding-right: 0;
   }
   .pr1-s480 {
-    padding-right: 16px;
     padding-right: 1rem;
   }
   .pr2-s480 {
-    padding-right: 32px;
     padding-right: 2rem;
   }
   .pb0-s480 {
     padding-bottom: 0;
   }
   .pb1-s480 {
-    padding-bottom: 16px;
     padding-bottom: 1rem;
   }
   .pb2-s480 {
-    padding-bottom: 32px;
     padding-bottom: 2rem;
   }
   .pl0-s480 {
     padding-left: 0;
   }
   .pl1-s480 {
-    padding-left: 16px;
     padding-left: 1rem;
   }
   .pl2-s480 {
-    padding-left: 32px;
     padding-left: 2rem;
   }
   .p0-s480 {
     padding: 0;
   }
   .p1-s480 {
-    padding: 16px;
     padding: 1rem;
   }
   .p2-s480 {
-    padding: 32px;
     padding: 2rem;
   }
   .w1-s480 {
@@ -1263,110 +1220,90 @@ em,
     margin-top: 0;
   }
   .mt1-s768 {
-    margin-top: 16px;
     margin-top: 1rem;
   }
   .mt2-s768 {
-    margin-top: 32px;
     margin-top: 2rem;
   }
   .mr0-s768 {
     margin-right: 0;
   }
   .mr1-s768 {
-    margin-right: 16px;
     margin-right: 1rem;
   }
   .mr2-s768 {
-    margin-right: 32px;
     margin-right: 2rem;
   }
   .mb0-s768 {
     margin-bottom: 0;
   }
   .mb1-s768 {
-    margin-bottom: 16px;
     margin-bottom: 1rem;
   }
   .mb2-s768 {
-    margin-bottom: 32px;
     margin-bottom: 2rem;
   }
   .ml0-s768 {
     margin-left: 0;
   }
   .ml1-s768 {
-    margin-left: 16px;
     margin-left: 1rem;
   }
   .ml2-s768 {
-    margin-left: 32px;
     margin-left: 2rem;
   }
   .m0-s768 {
     margin: 0;
   }
   .m1-s768 {
-    margin: 16px;
     margin: 1rem;
   }
   .m2-s768 {
-    margin: 32px;
     margin: 2rem;
   }
   .pt0-s768 {
     padding-top: 0;
   }
   .pt1-s768 {
-    padding-top: 16px;
     padding-top: 1rem;
   }
   .pt2-s768 {
-    padding-top: 32px;
     padding-top: 2rem;
   }
   .pr0-s768 {
     padding-right: 0;
   }
   .pr1-s768 {
-    padding-right: 16px;
     padding-right: 1rem;
   }
   .pr2-s768 {
-    padding-right: 32px;
     padding-right: 2rem;
   }
   .pb0-s768 {
     padding-bottom: 0;
   }
   .pb1-s768 {
-    padding-bottom: 16px;
     padding-bottom: 1rem;
   }
   .pb2-s768 {
-    padding-bottom: 32px;
     padding-bottom: 2rem;
   }
   .pl0-s768 {
     padding-left: 0;
   }
   .pl1-s768 {
-    padding-left: 16px;
     padding-left: 1rem;
   }
   .pl2-s768 {
-    padding-left: 32px;
     padding-left: 2rem;
   }
   .p0-s768 {
     padding: 0;
   }
   .p1-s768 {
-    padding: 16px;
     padding: 1rem;
   }
   .p2-s768 {
-    padding: 32px;
     padding: 2rem;
   }
   .w1-s768 {
@@ -1538,165 +1475,135 @@ em,
     margin-top: 0;
   }
   .mt1-s992 {
-    margin-top: 16px;
     margin-top: 1rem;
   }
   .mt2-s992 {
-    margin-top: 32px;
     margin-top: 2rem;
   }
   .mr0-s992 {
     margin-right: 0;
   }
   .mr1-s992 {
-    margin-right: 16px;
     margin-right: 1rem;
   }
   .mr2-s992 {
-    margin-right: 32px;
     margin-right: 2rem;
   }
   .mb0-s992 {
     margin-bottom: 0;
   }
   .mb1-s992 {
-    margin-bottom: 16px;
     margin-bottom: 1rem;
   }
   .mb2-s992 {
-    margin-bottom: 32px;
     margin-bottom: 2rem;
   }
   .ml0-s992 {
     margin-left: 0;
   }
   .ml1-s992 {
-    margin-left: 16px;
     margin-left: 1rem;
   }
   .ml2-s992 {
-    margin-left: 32px;
     margin-left: 2rem;
   }
   .m0-s992 {
     margin: 0;
   }
   .m1-s992 {
-    margin: 16px;
     margin: 1rem;
   }
   .m2-s992 {
-    margin: 32px;
     margin: 2rem;
   }
   .pt0-s992 {
     padding-top: 0;
   }
   .pt1-s992 {
-    padding-top: 16px;
     padding-top: 1rem;
   }
   .pt2-s992 {
-    padding-top: 32px;
     padding-top: 2rem;
   }
   .pr0-s992 {
     padding-right: 0;
   }
   .pr1-s992 {
-    padding-right: 16px;
     padding-right: 1rem;
   }
   .pr2-s992 {
-    padding-right: 32px;
     padding-right: 2rem;
   }
   .pb0-s992 {
     padding-bottom: 0;
   }
   .pb1-s992 {
-    padding-bottom: 16px;
     padding-bottom: 1rem;
   }
   .pb2-s992 {
-    padding-bottom: 32px;
     padding-bottom: 2rem;
   }
   .pl0-s992 {
     padding-left: 0;
   }
   .pl1-s992 {
-    padding-left: 16px;
     padding-left: 1rem;
   }
   .pl2-s992 {
-    padding-left: 32px;
     padding-left: 2rem;
   }
   .p0-s992 {
     padding: 0;
   }
   .p1-s992 {
-    padding: 16px;
     padding: 1rem;
   }
   .p2-s992 {
-    padding: 32px;
     padding: 2rem;
   }
   .pt0-s992 {
     padding-top: 0;
   }
   .pt1-s992 {
-    padding-top: 16px;
     padding-top: 1rem;
   }
   .pt2-s992 {
-    padding-top: 32px;
     padding-top: 2rem;
   }
   .pr0-s992 {
     padding-right: 0;
   }
   .pr1-s992 {
-    padding-right: 16px;
     padding-right: 1rem;
   }
   .pr2-s992 {
-    padding-right: 32px;
     padding-right: 2rem;
   }
   .pb0-s992 {
     padding-bottom: 0;
   }
   .pb1-s992 {
-    padding-bottom: 16px;
     padding-bottom: 1rem;
   }
   .pb2-s992 {
-    padding-bottom: 32px;
     padding-bottom: 2rem;
   }
   .pl0-s992 {
     padding-left: 0;
   }
   .pl1-s992 {
-    padding-left: 16px;
     padding-left: 1rem;
   }
   .pl2-s992 {
-    padding-left: 32px;
     padding-left: 2rem;
   }
   .p0-s992 {
     padding: 0;
   }
   .p1-s992 {
-    padding: 16px;
     padding: 1rem;
   }
   .p2-s992 {
-    padding: 32px;
     padding: 2rem;
   }
   .w1-s992 {
@@ -1868,110 +1775,90 @@ em,
     margin-top: 0;
   }
   .mt1-s1200 {
-    margin-top: 16px;
     margin-top: 1rem;
   }
   .mt2-s1200 {
-    margin-top: 32px;
     margin-top: 2rem;
   }
   .mr0-s1200 {
     margin-right: 0;
   }
   .mr1-s1200 {
-    margin-right: 16px;
     margin-right: 1rem;
   }
   .mr2-s1200 {
-    margin-right: 32px;
     margin-right: 2rem;
   }
   .mb0-s1200 {
     margin-bottom: 0;
   }
   .mb1-s1200 {
-    margin-bottom: 16px;
     margin-bottom: 1rem;
   }
   .mb2-s1200 {
-    margin-bottom: 32px;
     margin-bottom: 2rem;
   }
   .ml0-s1200 {
     margin-left: 0;
   }
   .ml1-s1200 {
-    margin-left: 16px;
     margin-left: 1rem;
   }
   .ml2-s1200 {
-    margin-left: 32px;
     margin-left: 2rem;
   }
   .m0-s1200 {
     margin: 0;
   }
   .m1-s1200 {
-    margin: 16px;
     margin: 1rem;
   }
   .m2-s1200 {
-    margin: 32px;
     margin: 2rem;
   }
   .pt0-s1200 {
     padding-top: 0;
   }
   .pt1-s1200 {
-    padding-top: 16px;
     padding-top: 1rem;
   }
   .pt2-s1200 {
-    padding-top: 32px;
     padding-top: 2rem;
   }
   .pr0-s1200 {
     padding-right: 0;
   }
   .pr1-s1200 {
-    padding-right: 16px;
     padding-right: 1rem;
   }
   .pr2-s1200 {
-    padding-right: 32px;
     padding-right: 2rem;
   }
   .pb0-s1200 {
     padding-bottom: 0;
   }
   .pb1-s1200 {
-    padding-bottom: 16px;
     padding-bottom: 1rem;
   }
   .pb2-s1200 {
-    padding-bottom: 32px;
     padding-bottom: 2rem;
   }
   .pl0-s1200 {
     padding-left: 0;
   }
   .pl1-s1200 {
-    padding-left: 16px;
     padding-left: 1rem;
   }
   .pl2-s1200 {
-    padding-left: 32px;
     padding-left: 2rem;
   }
   .p0-s1200 {
     padding: 0;
   }
   .p1-s1200 {
-    padding: 16px;
     padding: 1rem;
   }
   .p2-s1200 {
-    padding: 32px;
     padding: 2rem;
   }
   .w1-s1200 {
@@ -2065,7 +1952,6 @@ em,
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -ms-touch-action: pan-y;
@@ -2094,7 +1980,6 @@ em,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -2190,7 +2075,6 @@ em,
   color: transparent;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
   border: none;
@@ -2352,7 +2236,6 @@ em,
 
 #mainNav .navbar-brand {
   color: #e59a47;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -2390,14 +2273,12 @@ em,
     padding-top: 25px;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
   }
   #mainNav .navbar-brand {
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
   #mainNav .navbar-brand.logo-ajk {
@@ -2438,9 +2319,6 @@ header.masthead {
   text-align: center;
   color: white;
   background: url("../img/ajk-bg/ajk-bg-5.png") no-repeat scroll center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -2454,11 +2332,10 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
@@ -2471,10 +2348,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 header.masthead .intro-text h1 {
-  font-size: 17px;
+  font-size: 30px;
   font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
   margin-bottom: 25px;
-  color: #fffcef;
+  color: #393939;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2483,21 +2360,21 @@ header.masthead .intro-text h1 {
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 65px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 75px;
     font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
   }
   header.masthead .intro-text h1 {
-    font-size: 25px;
+    font-size: 50px;
     font-family: 'Caviar Dreams','Roboto Slab', Arial;
+    margin-top: 30px;
     margin-bottom: 50px;
     color: #393939;
   }
@@ -2537,7 +2414,6 @@ header.masthead .intro-text h1 {
   width: 100%;
   height: 100%;
   -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
   background: rgba(208, 239, 132, 0.9);
@@ -2587,7 +2463,6 @@ header.masthead .intro-text h1 {
   font-size: 16px;
   font-style: italic;
   margin: 0;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #portfolio * {
@@ -2633,7 +2508,6 @@ header.masthead .intro-text h1 {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -2671,7 +2545,6 @@ header.masthead .intro-text h1 {
   margin-left: 35px;
   /* IE 9 */
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #e59a47;
 }
@@ -2683,7 +2556,6 @@ header.masthead .intro-text h1 {
   height: 75px;
   /* IE 9 */
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: #e59a47;
 }
@@ -2799,7 +2671,6 @@ header.masthead .intro-text h1 {
 
 .timeline .timeline-heading .date-title {
   color: #d0ef84;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .timeline .timeline-body > ul,
@@ -2943,27 +2814,23 @@ section#contact .form-control:focus {
 section#contact ::-webkit-input-placeholder {
   font-weight: 700;
   color: #ced4da;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 section#contact :-moz-placeholder {
   font-weight: 700;
   color: #ced4da;
   /* Firefox 18- */
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 section#contact ::-moz-placeholder {
   font-weight: 700;
   color: #ced4da;
   /* Firefox 19+ */
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 footer {
@@ -2983,7 +2850,6 @@ footer ul.quicklinks {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 ul.social-buttons {
@@ -2997,7 +2863,6 @@ ul.social-buttons li a {
   width: 40px;
   height: 40px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
   color: white;
   border-radius: 100%;

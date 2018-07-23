@@ -26,7 +26,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  @include heading-font;
 }
 
 section {
@@ -50,7 +49,6 @@ section {
     margin-top: 45px;
     margin-bottom: 40px;
     text-transform: none;
-    @include serif-font;
   }
   
 }
@@ -62,7 +60,6 @@ section {
 
 // Button Styles
 .btn {
-  @include heading-font;
   font-weight: 700;
 }
 

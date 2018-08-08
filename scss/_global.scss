@@ -26,31 +26,46 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  line-height: 150%;
 }
 
 section {
   padding: 100px 0;
   h2.section-heading {
     font-size: 30px;
-    font-family: 'Caviar Dreams';
+    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
     margin-top: 0;
     margin-bottom: 15px;
     color: $orange-ajk;
 
     @include mediaQuery(tablet) {
       font-size: 40px;
-      font-family: 'Caviar Dreams';
+      font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
     }
   }
   h3.section-subheading {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     font-style: italic;
     margin-top: 45px;
     margin-bottom: 40px;
     text-transform: none;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 50px;
+      height: 2px;
+      background-color: $orange-ajk;
+    }
+
+    @include mediaQuery(mobile-end) {
+      font-size: 16px;
+    }
   }
-  
+
 }
 @include mediaQuery(tablet) {
   section {
@@ -82,6 +97,8 @@ section {
   &:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
   }
+
+  box-shadow: 0 3px 7px 1px rgba($orange-ajk, 0.6);
 }
 
 .text-color {
@@ -128,6 +145,7 @@ img::-moz-selection {
 img {
   &.responsive-img {
     max-width: 40%;
+
     @include mediaQuery(tablet) {
       max-width: 25%;
     }
@@ -136,11 +154,19 @@ img {
     }
   }
   &.responsive-map-img {
-    max-width: 45%;
+    max-width: 100%;
+
+    @include mediaQuery(tablet) {
+      max-width: 45%;
+    }
   }
   &.responsive-img-maquette {
-    max-width: 75%;
+    max-width: 100%;
     margin: 0 auto;
+
+    @include mediaQuery(tablet) {
+      max-width: 75%;
+    }
   }
   &.responsive-img-other {
     max-width: 100%;
@@ -161,6 +187,8 @@ footer {
 }
 
 .roundbox {
-  border-radius: 50%;
+  @include mediaQuery(tablet) {
+    border-radius: 50%;
+  }
 }
 

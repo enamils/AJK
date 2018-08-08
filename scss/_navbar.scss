@@ -9,7 +9,7 @@
     color: white;
     border: 0;
     background-color: $orange-ajk;
-    font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
     //@include heading-font;
   }
   .navbar-brand {
@@ -39,7 +39,7 @@
         font-weight: 600;
         letter-spacing: 1px;
         color: white;
-        font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+        font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
         // @include heading-font;
         &.active,
         &:hover {
@@ -94,7 +94,7 @@
     .navbar-nav {
       .nav-item {
         .nav-link {
-          font-size: 70%;
+          font-size: 75%;
         }
       }
     }

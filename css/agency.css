@@ -27,6 +27,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  line-height: 150%;
 }
 
 section {
@@ -35,7 +36,7 @@ section {
 
 section h2.section-heading {
   font-size: 30px;
-  font-family: 'Caviar Dreams';
+  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
   margin-top: 0;
   margin-bottom: 15px;
   color: #e59a47;
@@ -44,17 +45,33 @@ section h2.section-heading {
 @media only screen and (min-width: 768px) {
   section h2.section-heading {
     font-size: 40px;
-    font-family: 'Caviar Dreams';
+    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
   }
 }
 
 section h3.section-subheading {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   font-style: italic;
   margin-top: 45px;
   margin-bottom: 40px;
   text-transform: none;
+  position: relative;
+}
+
+section h3.section-subheading:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background-color: #e59a47;
+}
+
+@media only screen and (max-width: 767px) {
+  section h3.section-subheading {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -75,6 +92,7 @@ section h3.section-subheading {
 .btn-primary {
   background-color: #e59a47;
   border-color: #e59a47;
+  box-shadow: 0 3px 7px 1px rgba(229, 154, 71, 0.6);
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -142,12 +160,24 @@ img.responsive-img {
 }
 
 img.responsive-map-img {
-  max-width: 45%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  img.responsive-map-img {
+    max-width: 45%;
+  }
 }
 
 img.responsive-img-maquette {
-  max-width: 75%;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  img.responsive-img-maquette {
+    max-width: 75%;
+  }
 }
 
 img.responsive-img-other {
@@ -167,8 +197,10 @@ footer {
   background-color: #393939;
 }
 
-.roundbox {
-  border-radius: 50%;
+@media only screen and (min-width: 768px) {
+  .roundbox {
+    border-radius: 50%;
+  }
 }
 
 .rowTable {
@@ -292,7 +324,7 @@ img.right {
 
 img.left,
 img.right {
-  margin-bottom: em(5);
+  margin-bottom: 1em;
 }
 
 .bold,
@@ -2231,7 +2263,7 @@ em,
   color: white;
   border: 0;
   background-color: #e59a47;
-  font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -2261,7 +2293,7 @@ em,
   font-weight: 600;
   letter-spacing: 1px;
   color: white;
-  font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -2302,7 +2334,7 @@ em,
 
 @media only screen and (min-width: 1024px) {
   #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 70%;
+    font-size: 75%;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
     color: #fff;
@@ -2319,6 +2351,7 @@ header.masthead {
   text-align: center;
   color: white;
   background: url("../img/ajk-bg/ajk-bg-5.png") no-repeat scroll center center;
+  height: 100vh;
   background-size: cover;
 }
 
@@ -2349,14 +2382,14 @@ header.masthead .intro-text .intro-heading {
 
 header.masthead .intro-text h1 {
   font-size: 30px;
-  font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
   margin-bottom: 25px;
   color: #393939;
 }
 
 @media only screen and (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 230px;
+    padding-top: 190px;
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
@@ -2369,12 +2402,12 @@ header.masthead .intro-text h1 {
     font-size: 25px;
     font-weight: 700;
     line-height: 75px;
-    font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
   }
   header.masthead .intro-text h1 {
     font-size: 50px;
-    font-family: 'Caviar Dreams','Roboto Slab', Arial;
-    margin-top: 30px;
+    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+    margin-top: 10px;
     margin-bottom: 50px;
     color: #393939;
   }
@@ -2383,8 +2416,9 @@ header.masthead .intro-text h1 {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
-  color: #52bad5;
+  color: #e59a47;
   font-size: 20px;
+  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
 }
 
 .association p {
@@ -2446,8 +2480,8 @@ header.masthead .intro-text h1 {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
-  min-height: 135px;
-  padding: 25px;
+  min-height: 155px;
+  padding: 20px 20px 0 20px;
   text-align: center;
   background-color: #fff;
 }
@@ -2457,6 +2491,7 @@ header.masthead .intro-text h1 {
   text-transform: none;
   font-size: 18px;
   color: #52bad5;
+  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
@@ -2502,12 +2537,14 @@ header.masthead .intro-text h1 {
 
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .portfolio-modal .modal-content p.item-intro {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
+  text-align: center;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -2774,7 +2811,6 @@ header.masthead .intro-text h1 {
 }
 
 .project h4 {
-  color: #52bad5;
   font-size: 20px;
 }
 
@@ -2842,7 +2878,7 @@ footer span.copyright {
   font-size: 80%;
   line-height: 40px;
   text-transform: none;
-  font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
 }
 
 footer ul.quicklinks {

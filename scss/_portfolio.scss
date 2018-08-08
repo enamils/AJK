@@ -42,15 +42,19 @@
     .portfolio-caption {
       max-width: 400px;
       margin: 0 auto;
-      min-height: 135px;
-      padding: 25px;
+      min-height: 155px;
+      padding: 20px 20px 0 20px;
       text-align: center;
       background-color: $white;
+      @include mediaQuery($desktop-wide) {
+        min-height: 135px;
+      }
       h4 {
         margin: 0;
         text-transform: none;
         font-size: 18px;
         color: $blue-ajk;
+        font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
       }
       p {
         font-size: 16px;
@@ -90,11 +94,13 @@
     }
     p {
       margin-bottom: 30px;
+      text-align: justify;
     }
     p.item-intro {
       font-size: 16px;
       font-style: italic;
       margin: 20px 0 30px;
+      text-align: center;
     }
     ul.list-inline {
       margin-top: 0;
@@ -140,7 +146,5 @@
       }
     }
   }
-  .modal-backdrop {
-
-  }
+  .modal-backdrop {}
 }

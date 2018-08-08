@@ -3,6 +3,7 @@ header.masthead {
   text-align: center;
   color: white;
   background: url('../img/ajk-bg/ajk-bg-5.png') no-repeat scroll center center;
+  height: 100vh;
   @include background-cover;
   .intro-text {
     padding-top: 150px;
@@ -24,7 +25,7 @@ header.masthead {
     }
     h1 {
       font-size: 30px;
-      font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+      font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
       margin-bottom: 25px;
       color: $black-ajk;
     }
@@ -34,7 +35,7 @@ header.masthead {
 @include mediaQuery(tablet) {
   header.masthead {
     .intro-text {
-      padding-top: 230px;
+      padding-top: 190px;
       padding-bottom: 200px;
       .intro-lead-in {
         font-size: 30px;
@@ -46,12 +47,12 @@ header.masthead {
         font-size: 25px;
         font-weight: 700;
         line-height: 75px;
-        font-family: 'Caviar Dreams', 'Roboto Slab', Arial;
+        font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
       }
       h1 {
         font-size: 50px;
-        font-family: 'Caviar Dreams','Roboto Slab', Arial;
-        margin-top: 30px;
+        font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+        margin-top: 10px;
         margin-bottom: 50px;
         color: $black-ajk;
       }

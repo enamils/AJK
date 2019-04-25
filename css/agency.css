@@ -194,7 +194,7 @@ strong {
 }
 
 footer {
-  background-color: #393939;
+  background-color: #594040;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2323,7 +2323,7 @@ em,
   }
   #mainNav.navbar-shrink {
     padding: .5em;
-    background-color: #393939;
+    background-color: #594040;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #mainNav.navbar-shrink .navbar-brand.logo-ajk {
@@ -2350,7 +2350,7 @@ em,
 header.masthead {
   text-align: center;
   color: white;
-  background: url("../img/ajk-bg/ajk-bg-5.png") no-repeat scroll center center;
+  background: url("../img/ajk-bg/ajk-bg-1.png") no-repeat scroll center center;
   height: 100vh;
   background-size: cover;
 }
@@ -2411,6 +2411,25 @@ header.masthead .intro-text h1 {
     margin-bottom: 50px;
     color: #393939;
   }
+}
+
+.medias .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* ratio 16/9 */
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+.medias .video-container iframe,
+.medias .video-container object,
+.medias .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .service-heading {

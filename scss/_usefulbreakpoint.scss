@@ -1,16 +1,5 @@
 // Quelques exemples
 @include mediaQuery(mobile) {
-    .rowTable-s320 {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-    }
-    .colTable-s320 {
-        display: table-cell;
-    }
-    .gut-s320 {
-        height: 1px;
-    }
     .block-s320 {
         display: block;
     }
@@ -44,42 +33,6 @@
     .center-s320 {
         margin-left: auto;
         margin-right: auto
-    }
-    .boxFlexContainer-s320 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .boxFlexDirectionC-s320 {
-        display: flex;
-        flex-direction: column;
-    }
-    .boxFlexDirectionR-s320 {
-        display: flex;
-        flex-direction: row;
-    }
-    .spaceBetween-s320 {
-        justify-content: space-between;
-    }
-    .spaceAround-s320 {
-        justify-content: space-around;
-    }
-    .flexItemStart-s320 {
-        align-items: flex-start;
-    }
-    .flexItemCenter-s320 {
-        align-items: center;
-    }
-    .flexItemEnd-s320 {
-        align-items: flex-end;
-    }
-    .flexItem0-s320 {
-        order: 0;
-    }
-    .flexItem1-s320 {
-        order: 1;
-    }
-    .flexItem2-s320 {
-        order: 2;
     }
     .mt0-s320 {
         margin-top: 0;
@@ -171,78 +124,6 @@
     .p2-s320 {
         padding: 2rem;
     }
-    .w1-s320 {
-        width: 1%;
-    }
-    .w2-s320 {
-        width: 2%;
-    }
-    .w3-s320 {
-        width: 3%;
-    }
-    .w5-s320 {
-        width: 5%;
-    }
-    .w10-s320 {
-        width: 10%;
-    }
-    .w15-s320 {
-        width: 15%;
-    }
-    .w20-s320 {
-        width: 20%;
-    }
-    .w25-s320 {
-        width: 25%;
-    }
-    .w30-s320 {
-        width: 30%;
-    }
-    .w33-s320 {
-        width: 33.333%;
-    }
-    .w40-s320 {
-        width: 40%;
-    }
-    .w43-s320 {
-        width: 43%;
-    }
-    .w45-s320 {
-        width: 45%;
-    }
-    .w49-s320 {
-        width: 49%;
-    }
-    .w50-s320 {
-        width: 50%;
-    }
-    .w55-s320 {
-        width: 55%;
-    }
-    .w60-s320 {
-        width: 60%;
-    }
-    .w66-s320 {
-        width: 66.666%;
-    }
-    .w70-s320 {
-        width: 70%;
-    }
-    .w75-s320 {
-        width: 75%;
-    }
-    .w80-s320 {
-        width: 80%;
-    }
-    .w85-s320 {
-        width: 85%;
-    }
-    .w90-s320 {
-        width: 90%;
-    }
-    .w95-s320 {
-        width: 95%;
-    }
     .w100-s320 {
         width: 100%;
     }
@@ -255,17 +136,6 @@
 }
 
 @include mediaQuery(mobile-landscape) {
-    .rowTable-s480 {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-    }
-    .colTable-s480 {
-        display: table-cell;
-    }
-    .gut-s480 {
-        height: 1px;
-    }
     .block-s480 {
         display: block;
     }
@@ -299,42 +169,6 @@
     .center-s480 {
         margin-left: auto;
         margin-right: auto
-    }
-    .boxFlexContainer-s480 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .boxFlexDirectionC-s480 {
-        display: flex;
-        flex-direction: column;
-    }
-    .boxFlexDirectionR-s480 {
-        display: flex;
-        flex-direction: row;
-    }
-    .spaceBetween-s480 {
-        justify-content: space-between;
-    }
-    .spaceAround-s480 {
-        justify-content: space-around;
-    }
-    .flexItemStart-s480 {
-        align-items: flex-start;
-    }
-    .flexItemCenter-s480 {
-        align-items: center;
-    }
-    .flexItemEnd-s480 {
-        align-items: flex-end;
-    }
-    .flexItem0-s480 {
-        order: 0;
-    }
-    .flexItem1-s480 {
-        order: 1;
-    }
-    .flexItem2-s480 {
-        order: 2;
     }
     .mt0-s480 {
         margin-top: 0;
@@ -426,78 +260,6 @@
     .p2-s480 {
         padding: 2rem;
     }
-    .w1-s480 {
-        width: 1%;
-    }
-    .w2-s480 {
-        width: 2%;
-    }
-    .w3-s480 {
-        width: 3%;
-    }
-    .w5-s480 {
-        width: 5%;
-    }
-    .w10-s480 {
-        width: 10%;
-    }
-    .w15-s480 {
-        width: 15%;
-    }
-    .w20-s480 {
-        width: 20%;
-    }
-    .w25-s480 {
-        width: 25%;
-    }
-    .w30-s480 {
-        width: 30%;
-    }
-    .w33-s480 {
-        width: 33.333%;
-    }
-    .w40-s480 {
-        width: 40%;
-    }
-    .w43-s480 {
-        width: 43%;
-    }
-    .w45-s480 {
-        width: 45%;
-    }
-    .w49-s480 {
-        width: 49%;
-    }
-    .w50-s480 {
-        width: 50%;
-    }
-    .w55-s480 {
-        width: 55%;
-    }
-    .w60-s480 {
-        width: 60%;
-    }
-    .w66-s480 {
-        width: 66.666%;
-    }
-    .w70-s480 {
-        width: 70%;
-    }
-    .w75-s480 {
-        width: 75%;
-    }
-    .w80-s480 {
-        width: 80%;
-    }
-    .w85-s480 {
-        width: 85%;
-    }
-    .w90-s480 {
-        width: 90%;
-    }
-    .w95-s480 {
-        width: 95%;
-    }
     .w100-s480 {
         width: 100%;
     }
@@ -510,25 +272,11 @@
 }
 
 @include mediaQuery(tablet) {
-    .rowTable-s768 {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-    }
-    .colTable-s768 {
-        display: table-cell;
-    }
-    .gut-s768 {
-        height: 1px;
-    }
     .block-s768 {
         display: block;
     }
     .inline-s768 {
         display: inline;
-    }
-    .inbl-s768 {
-        display: inline-block;
     }
     .txtLeft-s768 {
         text-align: left;
@@ -557,42 +305,6 @@
     .center-s768 {
         margin-left: auto;
         margin-right: auto
-    }
-    .boxFlexContainer-s768 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .boxFlexDirectionC-s768 {
-        display: flex;
-        flex-direction: column;
-    }
-    .boxFlexDirectionR-s768 {
-        display: flex;
-        flex-direction: row;
-    }
-    .spaceBetween-s768 {
-        justify-content: space-between;
-    }
-    .spaceAround-s768 {
-        justify-content: space-around;
-    }
-    .flexItemStart-s768 {
-        align-items: flex-start;
-    }
-    .flexItemCenter-s768 {
-        align-items: center;
-    }
-    .flexItemEnd-s768 {
-        align-items: flex-end;
-    }
-    .flexItem0-s768 {
-        order: 0;
-    }
-    .flexItem1-s768 {
-        order: 1;
-    }
-    .flexItem2-s768 {
-        order: 2;
     }
     .mt0-s768 {
         margin-top: 0;
@@ -684,78 +396,6 @@
     .p2-s768 {
         padding: 2rem;
     }
-    .w1-s768 {
-        width: 1%;
-    }
-    .w2-s768 {
-        width: 2%;
-    }
-    .w3-s768 {
-        width: 3%;
-    }
-    .w5-s768 {
-        width: 5%;
-    }
-    .w10-s768 {
-        width: 10%;
-    }
-    .w15-s768 {
-        width: 15%;
-    }
-    .w20-s768 {
-        width: 20%;
-    }
-    .w25-s768 {
-        width: 25%;
-    }
-    .w30-s768 {
-        width: 30%;
-    }
-    .w33-s768 {
-        width: 33.333%;
-    }
-    .w40-s768 {
-        width: 40%;
-    }
-    .w43-s768 {
-        width: 43%;
-    }
-    .w45-s768 {
-        width: 45%;
-    }
-    .w49-s768 {
-        width: 49%;
-    }
-    .w50-s768 {
-        width: 50%;
-    }
-    .w55-s768 {
-        width: 55%;
-    }
-    .w60-s768 {
-        width: 60%;
-    }
-    .w66-s768 {
-        width: 66.666%;
-    }
-    .w70-s768 {
-        width: 70%;
-    }
-    .w75-s768 {
-        width: 75%;
-    }
-    .w80-s768 {
-        width: 80%;
-    }
-    .w85-s768 {
-        width: 85%;
-    }
-    .w90-s768 {
-        width: 90%;
-    }
-    .w95-s768 {
-        width: 95%;
-    }
     .w100-s768 {
         width: 100%;
     }
@@ -768,17 +408,6 @@
 }
 
 @include mediaQuery(desktop) {
-    .rowTable-s992 {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-    }
-    .colTable-s992 {
-        display: table-cell;
-    }
-    .gut-s992 {
-        height: 1px;
-    }
     .block-s992 {
         display: block;
     }
@@ -812,42 +441,6 @@
     .center-s992 {
         margin-left: auto;
         margin-right: auto
-    }
-    .boxFlexContainer-s992 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .boxFlexDirectionC-s992 {
-        display: flex;
-        flex-direction: column;
-    }
-    .boxFlexDirectionR-s992 {
-        display: flex;
-        flex-direction: row;
-    }
-    .spaceBetween-s992 {
-        justify-content: space-between;
-    }
-    .spaceAround-s992 {
-        justify-content: space-around;
-    }
-    .flexItemStart-s992 {
-        align-items: flex-start;
-    }
-    .flexItemCenter-s992 {
-        align-items: center;
-    }
-    .flexItemEnd-s992 {
-        align-items: flex-end;
-    }
-    .flexItem0-s992 {
-        order: 0;
-    }
-    .flexItem1-s992 {
-        order: 1;
-    }
-    .flexItem2-s992 {
-        order: 2;
     }
     .mt0-s992 {
         margin-top: 0;
@@ -984,78 +577,6 @@
     .p2-s992 {
         padding: 2rem;
     }
-    .w1-s992 {
-        width: 1%;
-    }
-    .w2-s992 {
-        width: 2%;
-    }
-    .w3-s992 {
-        width: 3%;
-    }
-    .w5-s992 {
-        width: 5%;
-    }
-    .w10-s992 {
-        width: 10%;
-    }
-    .w15-s992 {
-        width: 15%;
-    }
-    .w20-s992 {
-        width: 20%;
-    }
-    .w25-s992 {
-        width: 25%;
-    }
-    .w30-s992 {
-        width: 30%;
-    }
-    .w33-s992 {
-        width: 33.333%;
-    }
-    .w40-s992 {
-        width: 40%;
-    }
-    .w43-s992 {
-        width: 43%;
-    }
-    .w45-s992 {
-        width: 45%;
-    }
-    .w49-s992 {
-        width: 49%;
-    }
-    .w50-s992 {
-        width: 50%;
-    }
-    .w55-s992 {
-        width: 55%;
-    }
-    .w60-s992 {
-        width: 60%;
-    }
-    .w66-s992 {
-        width: 66.666%;
-    }
-    .w70-s992 {
-        width: 70%;
-    }
-    .w75-s992 {
-        width: 75%;
-    }
-    .w80-s992 {
-        width: 80%;
-    }
-    .w85-s992 {
-        width: 85%;
-    }
-    .w90-s992 {
-        width: 90%;
-    }
-    .w95-s992 {
-        width: 95%;
-    }
     .w100-s992 {
         width: 100%;
     }
@@ -1068,17 +589,6 @@
 }
 
 @include mediaQuery(desktop-wide) {
-    .rowTable-s1200 {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-    }
-    .colTable-s1200 {
-        display: table-cell;
-    }
-    .gut-s1200 {
-        height: 1px;
-    }
     .block-s1200 {
         display: block;
     }
@@ -1112,42 +622,6 @@
     .center-s1200 {
         margin-left: auto;
         margin-right: auto
-    }
-    .boxFlexContainer-s1200 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .boxFlexDirectionC-s1200 {
-        display: flex;
-        flex-direction: column;
-    }
-    .boxFlexDirectionR-s1200 {
-        display: flex;
-        flex-direction: row;
-    }
-    .spaceBetween-s1200 {
-        justify-content: space-between;
-    }
-    .spaceAround-s1200 {
-        justify-content: space-around;
-    }
-    .flexItemStart-s1200 {
-        align-items: flex-start;
-    }
-    .flexItemCenter-s1200 {
-        align-items: center;
-    }
-    .flexItemEnd-s1200 {
-        align-items: flex-end;
-    }
-    .flexItem0-s1200 {
-        order: 0;
-    }
-    .flexItem1-s1200 {
-        order: 1;
-    }
-    .flexItem2-s1200 {
-        order: 2;
     }
     .mt0-s1200 {
         margin-top: 0;
@@ -1238,78 +712,6 @@
     }
     .p2-s1200 {
         padding: 2rem;
-    }
-    .w1-s1200 {
-        width: 1%;
-    }
-    .w2-s1200 {
-        width: 2%;
-    }
-    .w3-s1200 {
-        width: 3%;
-    }
-    .w5-s1200 {
-        width: 5%;
-    }
-    .w10-s1200 {
-        width: 10%;
-    }
-    .w15-s1200 {
-        width: 15%;
-    }
-    .w20-s1200 {
-        width: 20%;
-    }
-    .w25-s1200 {
-        width: 25%;
-    }
-    .w30-s1200 {
-        width: 30%;
-    }
-    .w33-s1200 {
-        width: 33.333%;
-    }
-    .w40-s1200 {
-        width: 40%;
-    }
-    .w43-s1200 {
-        width: 43%;
-    }
-    .w45-s1200 {
-        width: 45%;
-    }
-    .w49-s1200 {
-        width: 49%;
-    }
-    .w50-s1200 {
-        width: 50%;
-    }
-    .w55-s1200 {
-        width: 55%;
-    }
-    .w60-s1200 {
-        width: 60%;
-    }
-    .w66-s1200 {
-        width: 66.666%;
-    }
-    .w70-s1200 {
-        width: 70%;
-    }
-    .w75-s1200 {
-        width: 75%;
-    }
-    .w80-s1200 {
-        width: 80%;
-    }
-    .w85-s1200 {
-        width: 85%;
-    }
-    .w90-s1200 {
-        width: 90%;
-    }
-    .w95-s1200 {
-        width: 95%;
     }
     .w100-s1200 {
         width: 100%;

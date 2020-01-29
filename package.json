@@ -1,44 +1,31 @@
 {
-    "title": "Agency",
-    "name": "startbootstrap-agency",
+    "title": "AJK",
+    "name": "ajk-agency",
     "version": "4.0.0",
-    "description": "Agency is a one page HTML theme for Bootstrap.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/agency",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
-        "email": "feedback@startbootstrap.com"
+    "scripts": {
+        "start": "node_modules/.bin/gulp watch"
     },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
-    },
+    "description": "Package for AJK website",
+    "author": "Enamils",
     "dependencies": {
-        "bootstrap": "4.0.0",
+        "@fortawesome/fontawesome-free": "5.10.2",
         "font-awesome": "4.7.0",
-        "jquery": "^3.4.0",
+        "jquery": "3.4.1",
         "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.5",
-        "gulp": "^3.9.1",
-        "gulp-clean-css": "3.9.2",
-        "gulp-header": "2.0.1",
-        "gulp-rename": "^1.4.0",
-        "gulp-sass": "^3.2.1",
-        "gulp-uglify": "3.0.0",
+        "bootstrap": "^4.4.1",
+        "browser-sync": "2.26.7",
+        "del": "5.1.0",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "7.0.0",
+        "gulp-clean-css": "4.2.0",
+        "gulp-header": "2.0.9",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.2",
+        "gulp-uglify": "3.0.2",
+        "merge-stream": "2.0.0",
         "slick-carousel": "^1.8.1"
     }
 }

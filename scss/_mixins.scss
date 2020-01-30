@@ -8,6 +8,16 @@
 @mixin body-font {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+@mixin caviar-dream-font {
+  font-family: 'Caviar Dreams',
+  'Montserrat',
+  'Helvetica Neue',
+  Helvetica,
+  Arial,
+  sans-serif;
+}
+
 @mixin caviar-dream {
   @font-face {
     font-family: 'Caviar Dreams';
@@ -18,7 +28,6 @@
   }
 }
 // Mixin for media Query
-
 @mixin mediaQuery($mediaQuery) {
   @if $mediaQuery==mobile {
     @media only screen and (min-width: $mobile) {

@@ -17,13 +17,7 @@ Icon
 *.css.map
 
 ### FILES ###
-vendor/bootstrap/**
-vendor/font-awesome/less
-vendor/font-awesome/css
-vendor/font-awesome/fonts
-vendor/jquery
-vendor/jquery-easing
-vendor/fontawesome-free
+vendor/**/**
 
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm

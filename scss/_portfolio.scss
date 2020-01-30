@@ -3,6 +3,11 @@
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+
+    @include mediaQuery(mobile-end) {
+      margin: 0 0 30px;
+    }
+
     .portfolio-link {
       position: relative;
       display: block;
@@ -54,7 +59,7 @@
         text-transform: none;
         font-size: 18px;
         color: $blue-ajk;
-        font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+        @include caviar-dream-font;
       }
       p {
         font-size: 16px;
@@ -65,14 +70,6 @@
   }
   * {
     z-index: 2;
-  }
-}
-
-@include mediaQuery(mobile-end) {
-  #portfolio {
-    .portfolio-item {
-      margin: 0 0 30px;
-    }
   }
 }
 
@@ -146,5 +143,4 @@
       }
     }
   }
-  .modal-backdrop {}
 }

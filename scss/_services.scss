@@ -4,7 +4,7 @@
   text-transform: none;
   color: $orange-ajk;
   font-size: 20px;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  @include caviar-dream-font;
 }
 
 .association {
@@ -16,6 +16,6 @@
 .partenary-section {
   h4 {
     font-size: 1.3em;
-    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+    @include caviar-dream-font;
    }
 }

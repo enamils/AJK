@@ -6,7 +6,7 @@ footer {
     font-size: 80%;
     line-height: 40px;
     text-transform: none;
-    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+    @include caviar-dream-font;
   }
   ul.quicklinks {
     font-size: 90%;

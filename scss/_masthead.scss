@@ -5,56 +5,52 @@ header.masthead {
   background: url('../img/ajk-bg/ajk-bg-1.png') no-repeat scroll center center;
   height: 100vh;
   @include background-cover;
+
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
+
+    @include mediaQuery(tablet) {
+      padding-top: 190px;
+      padding-bottom: 200px;
+    }
+
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
+
+      @include mediaQuery(tablet) {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
     }
+
     .intro-heading {
       font-size: 20px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      @include mediaQuery(desktop-wide) {
-        font-size: 50px;
+      @include caviar-dream-font;
+
+      @include mediaQuery(tablet) {
+        font-size: 25px;
+        line-height: 75px;
       }
     }
+
     h1 {
       font-size: 30px;
-      font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
       margin-bottom: 25px;
       color: $black-ajk;
-    }
-  }
-}
+      @include caviar-dream-font;
 
-@include mediaQuery(tablet) {
-  header.masthead {
-    .intro-text {
-      padding-top: 190px;
-      padding-bottom: 200px;
-      .intro-lead-in {
-        font-size: 30px;
-        font-style: italic;
-        line-height: 40px;
-        margin-bottom: 10px;
-      }
-      .intro-heading {
-        font-size: 25px;
-        font-weight: 700;
-        line-height: 75px;
-        font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
-      }
-      h1 {
+      @include mediaQuery(tablet) {
         font-size: 50px;
-        font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
         margin-top: 10px;
         margin-bottom: 50px;
-        color: $black-ajk;
       }
     }
   }

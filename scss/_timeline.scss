@@ -92,7 +92,7 @@
       color: $orange-ajk;
       &.subheading {
         text-transform: none;
-        font-family: 'Caviar Dreams';
+        @include caviar-dream-font;
       }
     }
     .date-title {

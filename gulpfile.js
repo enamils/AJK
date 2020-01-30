@@ -2,6 +2,7 @@
 
 const autoprefixer = require("gulp-autoprefixer");
 const gulp = require('gulp');
+const babel = require("gulp-babel");
 const del = require("del");
 const sass = require('gulp-sass');
 const header = require('gulp-header');
@@ -103,6 +104,10 @@ function js() {
       '!./js/contact_me.js',
       '!./js/jqBootstrapValidation.js'
     ])
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      }))
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg

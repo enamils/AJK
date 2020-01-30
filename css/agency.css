@@ -42,16 +42,16 @@ section {
 
 section h2.section-heading {
   font-size: 30px;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
   margin-top: 0;
   margin-bottom: 15px;
   color: #e59a47;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
   section h2.section-heading {
     font-size: 40px;
-    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+    font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
 
@@ -200,7 +200,7 @@ img.responsive-img-other {
 
 strong {
   color: #e59a47;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 footer {
@@ -477,40 +477,6 @@ em,
 }
 
 @media only screen and (min-width: 320px) {
-  .block-s320 {
-    display: block;
-  }
-  .inline-s320 {
-    display: inline;
-  }
-  .txtLeft-s320 {
-    text-align: left;
-  }
-  .txtRight-s320 {
-    text-align: right;
-  }
-  .txtCenter-s320 {
-    text-align: center;
-  }
-  .txtTop-s320 {
-    vertical-align: top;
-  }
-  .txtBottom-s320 {
-    vertical-align: bottom;
-  }
-  .txtMiddle-s320 {
-    vertical-align: middle;
-  }
-  .left-s320 {
-    float: left;
-  }
-  .right-s320 {
-    float: right;
-  }
-  .center-s320 {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .mt0-s320 {
     margin-top: 0;
   }
@@ -583,9 +549,6 @@ em,
   .pb2-s320 {
     padding-bottom: 2rem;
   }
-  .pl0-s320 {
-    padding-left: 0;
-  }
   .pl1-s320 {
     padding-left: 1rem;
   }
@@ -604,49 +567,9 @@ em,
   .w100-s320 {
     width: 100%;
   }
-  .clearNone-s320 {
-    clear: none;
-  }
-  .hide-s320 {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 480px) {
-  .block-s480 {
-    display: block;
-  }
-  .inline-s480 {
-    display: inline;
-  }
-  .txtLeft-s480 {
-    text-align: left;
-  }
-  .txtRight-s480 {
-    text-align: right;
-  }
-  .txtCenter-s480 {
-    text-align: center;
-  }
-  .txtTop-s480 {
-    vertical-align: top;
-  }
-  .txtBottom-s480 {
-    vertical-align: bottom;
-  }
-  .txtMiddle-s480 {
-    vertical-align: middle;
-  }
-  .left-s480 {
-    float: left;
-  }
-  .right-s480 {
-    float: right;
-  }
-  .center-s480 {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .mt0-s480 {
     margin-top: 0;
   }
@@ -719,9 +642,6 @@ em,
   .pb2-s480 {
     padding-bottom: 2rem;
   }
-  .pl0-s480 {
-    padding-left: 0;
-  }
   .pl1-s480 {
     padding-left: 1rem;
   }
@@ -740,48 +660,11 @@ em,
   .w100-s480 {
     width: 100%;
   }
-  .clearNone-s480 {
-    clear: none;
-  }
-  .hide-s480 {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 768px) {
-  .block-s768 {
-    display: block;
-  }
-  .inline-s768 {
-    display: inline;
-  }
-  .txtLeft-s768 {
-    text-align: left;
-  }
-  .txtRight-s768 {
-    text-align: right;
-  }
-  .txtCenter-s768 {
-    text-align: center;
-  }
-  .txtTop-s768 {
-    vertical-align: top;
-  }
-  .txtBottom-s768 {
-    vertical-align: bottom;
-  }
-  .txtMiddle-s768 {
-    vertical-align: middle;
-  }
   .left-s768 {
     float: left;
-  }
-  .right-s768 {
-    float: right;
-  }
-  .center-s768 {
-    margin-left: auto;
-    margin-right: auto;
   }
   .mt0-s768 {
     margin-top: 0;
@@ -855,9 +738,6 @@ em,
   .pb2-s768 {
     padding-bottom: 2rem;
   }
-  .pl0-s768 {
-    padding-left: 0;
-  }
   .pl1-s768 {
     padding-left: 1rem;
   }
@@ -876,49 +756,9 @@ em,
   .w100-s768 {
     width: 100%;
   }
-  .clearNone-s768 {
-    clear: none;
-  }
-  .hide-s768 {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
-  .block-s992 {
-    display: block;
-  }
-  .inline-s992 {
-    display: inline;
-  }
-  .txtLeft-s992 {
-    text-align: left;
-  }
-  .txtRight-s992 {
-    text-align: right;
-  }
-  .txtCenter-s992 {
-    text-align: center;
-  }
-  .txtTop-s992 {
-    vertical-align: top;
-  }
-  .txtBottom-s992 {
-    vertical-align: bottom;
-  }
-  .txtMiddle-s992 {
-    vertical-align: middle;
-  }
-  .left-s992 {
-    float: left;
-  }
-  .right-s992 {
-    float: right;
-  }
-  .center-s992 {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .mt0-s992 {
     margin-top: 0;
   }
@@ -991,9 +831,6 @@ em,
   .pb2-s992 {
     padding-bottom: 2rem;
   }
-  .pl0-s992 {
-    padding-left: 0;
-  }
   .pl1-s992 {
     padding-left: 1rem;
   }
@@ -1036,9 +873,6 @@ em,
   .pb2-s992 {
     padding-bottom: 2rem;
   }
-  .pl0-s992 {
-    padding-left: 0;
-  }
   .pl1-s992 {
     padding-left: 1rem;
   }
@@ -1057,49 +891,12 @@ em,
   .w100-s992 {
     width: 100%;
   }
-  .clearNone-s992 {
-    clear: none;
-  }
   .hide-s992 {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .block-s1200 {
-    display: block;
-  }
-  .inline-s1200 {
-    display: inline;
-  }
-  .txtLeft-s1200 {
-    text-align: left;
-  }
-  .txtRight-s1200 {
-    text-align: right;
-  }
-  .txtCenter-s1200 {
-    text-align: center;
-  }
-  .txtTop-s1200 {
-    vertical-align: top;
-  }
-  .txtBottom-s1200 {
-    vertical-align: bottom;
-  }
-  .txtMiddle-s1200 {
-    vertical-align: middle;
-  }
-  .left-s1200 {
-    float: left;
-  }
-  .right-s1200 {
-    float: right;
-  }
-  .center-s1200 {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .mt0-s1200 {
     margin-top: 0;
   }
@@ -1172,9 +969,6 @@ em,
   .pb2-s1200 {
     padding-bottom: 2rem;
   }
-  .pl0-s1200 {
-    padding-left: 0;
-  }
   .pl1-s1200 {
     padding-left: 1rem;
   }
@@ -1192,12 +986,6 @@ em,
   }
   .w100-s1200 {
     width: 100%;
-  }
-  .clearNone-s1200 {
-    clear: none;
-  }
-  .hide-s1200 {
-    display: none;
   }
 }
 
@@ -1474,7 +1262,18 @@ em,
 }
 
 #mainNav {
-  background-color: #393939;
+  background-color: #594040;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
 }
 
 #mainNav .navbar-toggler {
@@ -1485,7 +1284,7 @@ em,
   color: white;
   border: 0;
   background-color: #e59a47;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -1496,12 +1295,26 @@ em,
   color: #f7e738;
 }
 
+@media only screen and (min-width: 992px) {
+  #mainNav .navbar-brand {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
 #mainNav .navbar-brand.logo-ajk {
   text-indent: -9999px;
   width: 80px;
   height: 80px;
   background: url("../img/logos/logo-final-ajk.svg") no-repeat top left;
   background-size: contain;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav .navbar-brand.logo-ajk {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1515,7 +1328,7 @@ em,
   font-weight: 600;
   letter-spacing: 1px;
   color: white;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -1523,34 +1336,9 @@ em,
 }
 
 @media only screen and (min-width: 992px) {
-  #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
-    background-color: transparent;
-  }
-  #mainNav .navbar-brand {
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  #mainNav .navbar-brand.logo-ajk {
-    width: 150px;
-    height: 150px;
-  }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: #343a40;
     padding: 1.1em 1em !important;
-  }
-  #mainNav.navbar-shrink {
-    padding: .5em;
-    background-color: #594040;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  #mainNav.navbar-shrink .navbar-brand.logo-ajk {
-    width: 60px;
-    height: 60px;
   }
 }
 
@@ -1558,15 +1346,27 @@ em,
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 75%;
   }
-  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: #fff;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 85%;
   }
+}
+
+#mainNav.navbar-shrink {
+  padding: .5em;
+  background-color: #594040;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+
+#mainNav.navbar-shrink .navbar-brand.logo-ajk {
+  width: 60px;
+  height: 60px;
 }
 
 header.masthead {
@@ -1582,6 +1382,13 @@ header.masthead .intro-text {
   padding-bottom: 100px;
 }
 
+@media only screen and (min-width: 768px) {
+  header.masthead .intro-text {
+    padding-top: 190px;
+    padding-bottom: 200px;
+  }
+}
+
 header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
   font-style: italic;
@@ -1589,49 +1396,41 @@ header.masthead .intro-text .intro-lead-in {
   margin-bottom: 25px;
 }
 
+@media only screen and (min-width: 768px) {
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+}
+
 header.masthead .intro-text .intro-heading {
   font-size: 20px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   header.masthead .intro-text .intro-heading {
-    font-size: 50px;
+    font-size: 25px;
+    line-height: 75px;
   }
 }
 
 header.masthead .intro-text h1 {
   font-size: 30px;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
   margin-bottom: 25px;
   color: #393939;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 190px;
-    padding-bottom: 200px;
-  }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 30px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 10px;
-  }
-  header.masthead .intro-text .intro-heading {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 75px;
-    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
-  }
   header.masthead .intro-text h1 {
     font-size: 50px;
-    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
     margin-top: 10px;
     margin-bottom: 50px;
-    color: #393939;
   }
 }
 
@@ -1659,7 +1458,7 @@ header.masthead .intro-text h1 {
   text-transform: none;
   color: #e59a47;
   font-size: 20px;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .association p {
@@ -1668,12 +1467,18 @@ header.masthead .intro-text h1 {
 
 .partenary-section h4 {
   font-size: 1.3em;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -1732,7 +1537,7 @@ header.masthead .intro-text h1 {
   text-transform: none;
   font-size: 18px;
   color: #52bad5;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
@@ -1743,12 +1548,6 @@ header.masthead .intro-text h1 {
 
 #portfolio * {
   z-index: 2;
-}
-
-@media only screen and (max-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
 }
 
 .portfolio-modal {
@@ -1944,7 +1743,7 @@ header.masthead .intro-text h1 {
 
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
-  font-family: 'Caviar Dreams';
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .timeline .timeline-heading .date-title {
@@ -2120,7 +1919,7 @@ footer span.copyright {
   font-size: 80%;
   line-height: 40px;
   text-transform: none;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  font-family: 'Caviar Dreams', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 footer ul.quicklinks {

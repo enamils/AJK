@@ -33,14 +33,14 @@ section {
   padding: 100px 0;
   h2.section-heading {
     font-size: 30px;
-    font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
     margin-top: 0;
     margin-bottom: 15px;
     color: $orange-ajk;
+    @include caviar-dream-font;
 
     @include mediaQuery(tablet) {
       font-size: 40px;
-      font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+      @include caviar-dream-font;
     }
   }
   h3.section-subheading {
@@ -179,7 +179,7 @@ img {
 
 strong {
   color: $orange-ajk;
-  font-family: 'Caviar Dreams', Arial, Helvetica, sans-serif;
+  @include caviar-dream-font;
 }
 
 footer {

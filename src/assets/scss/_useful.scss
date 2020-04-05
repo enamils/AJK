@@ -1,0 +1,277 @@
+// Gestion du positionnement en CSS
+.gutter {
+    height: 1px;
+}
+
+.block {
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+img.left {
+    margin-right: 1em
+}
+
+img.right {
+    margin-left: 1em
+}
+
+img.left,
+img.right {
+    margin-bottom: 1em;
+}
+
+// Modification de texte
+.bold,
+strong {
+    font-weight: bold
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+em,
+.italic {
+    font-style: italic
+}
+
+// Alignement de textes
+.txtLeft {
+    text-align: left
+}
+
+.txtRight {
+    text-align: right
+}
+
+.txtCenter {
+    text-align: center
+}
+
+.txtTop {
+    vertical-align: top
+}
+
+.txtBottom {
+    vertical-align: bottom
+}
+
+.txtMiddle {
+    vertical-align: middle;
+}
+
+// Marges
+.mt0 {
+    margin-top: 0;
+}
+
+.mt1 {
+    margin-top: 1em;
+}
+
+.mt2 {
+    margin-top: 2em;
+}
+
+.mr0 {
+    margin-right: 0;
+}
+
+.mr1 {
+    margin-right: 1em;
+}
+
+.mr2 {
+    margin-right: 2em;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mb1 {
+    margin-bottom: 1em;
+}
+
+.mb2 {
+    margin-bottom: 2em;
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.ml1 {
+    margin-left: 1em;
+}
+
+.ml2 {
+    margin-left: 2em;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.m1 {
+    margin: 1em;
+}
+
+.m2 {
+    margin: 2em;
+}
+
+// Padding
+.pt0 {
+    padding-top: 0;
+}
+
+.pt1 {
+    padding-top: 1em;
+}
+
+.pt2 {
+    padding-top: 2em;
+}
+
+.pr0 {
+    padding-right: 0;
+}
+
+.pr1 {
+    padding-right: 1em;
+}
+
+.pr2 {
+    padding-right: 2em;
+}
+
+.pb0 {
+    padding-bottom: 0;
+}
+
+.pb1 {
+    padding-bottom: 1em;
+}
+
+.pb2 {
+    padding-bottom: 2em;
+}
+
+.pl0 {
+    padding-left: 0;
+}
+
+.pl1 {
+    padding-left: 1em;
+}
+
+.pl2 {
+    padding-left: 2em;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.p1 {
+    padding: 1em;
+}
+
+.p2 {
+    padding: 2em;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.wAuto {
+    width: auto;
+}
+
+// Largeurs
+// Classes diverses
+%visuallyHidden {
+    margin: 1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+    ;
+}
+
+.visuallyHidden {
+    @extend %visuallyHidden;
+}
+
+.hide {
+    display: none;
+}
+
+.noUnderline {
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+// Clear Floated Elements
+// --------------------------------------------------------------------------
+.clear {
+    clear: both;
+}
+
+.clearNone {
+    clear: none;
+}
+
+// http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.listNone {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listTypeCircle {
+    list-style-type: circle;
+    padding: 0;
+}
+
+.listTypeCirclePadding {
+    list-style-type: circle;
+}

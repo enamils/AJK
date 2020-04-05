@@ -102,6 +102,7 @@ function js() {
       './js/*.js',
       '!./js/*.min.js',
       '!./js/contact_me.js',
+      '!./js/glide-setup.js',
       '!./js/jqBootstrapValidation.js'
     ])
     .pipe(

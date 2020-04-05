@@ -1,0 +1,104 @@
+// Styling for the navbar
+#mainNav {
+  background-color: $red-mauve-ajk;
+  @include mediaQuery(tablet-desktop) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s,
+    padding-bottom 0.3s;
+    transition: padding-top 0.3s,
+    padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: $orange-ajk;
+    @include caviar-dream-font;
+  }
+  .navbar-brand {
+    color: $orange-ajk;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($yellow-ajk, 10%);
+    }
+
+    @include mediaQuery(tablet-desktop) {
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    &.logo-ajk {
+      text-indent: -9999px;
+      width: 80px;
+      height: 80px;
+      background: url('../img/logos/logo-final-ajk.svg') no-repeat top left;
+      background-size: contain;
+
+      @include mediaQuery(tablet-desktop) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+  .navbar-nav {
+    @include mediaQuery(tablet-end) {
+      margin-top: 1em;
+    }
+    .nav-item {
+      .nav-link {
+        font-size: 90%;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+        @include caviar-dream-font;
+
+        &.active,
+        &:hover {
+          color: $yellow-ajk;
+        }
+
+        @include mediaQuery(tablet-desktop) {
+          color:$gray-800;
+          padding: 1.1em 1em !important;
+        }
+
+        @include mediaQuery(desktop) {
+          font-size: 75%;
+        }
+
+        @include mediaQuery(desktop-wide) {
+          font-size: 85%;
+        }
+      }
+    }
+  }
+  &.navbar-shrink {
+    padding: .5em;
+    background-color: $red-mauve-ajk;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $white;
+        }
+      }
+    }
+
+    .navbar-brand {
+      &.logo-ajk {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

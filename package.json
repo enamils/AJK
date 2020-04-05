@@ -1,9 +1,11 @@
 {
     "title": "AJK",
     "name": "ajk-agency",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "node_modules/.bin/gulp watch",
+        "build": "webpack --config webpack.config.js --mode=development",
+        "watch": "webpack-dev-server --config webpack.config.js --watch"
     },
     "description": "Package for AJK website",
     "author": "Enamils",
@@ -19,6 +21,7 @@
         "@babel/core": "^7.9.0",
         "@babel/preset-env": "^7.9.0",
         "@babel/register": "^7.9.0",
+        "babel-loader": "^8.1.0",
         "bootstrap": "^4.4.1",
         "browser-sync": "2.26.7",
         "del": "5.1.0",
@@ -31,6 +34,9 @@
         "gulp-sass": "4.0.2",
         "gulp-uglify": "3.0.2",
         "merge-stream": "2.0.0",
-        "slick-carousel": "^1.8.1"
+        "slick-carousel": "^1.8.1",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
     }
 }

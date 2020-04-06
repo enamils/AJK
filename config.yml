@@ -1,5 +1,8 @@
 PATHS:
   dist: "./public/dist"
+  assets:
+    images: "./src/assets/images/*/*"
+    fonts: "./src/assets/fonts/*"
   vendor:
     - "./src/assets/vendor/jquery/jquery.js"
     - "./src/assets/vendor/bootstrap/js/bootstrap.bundle.js"
@@ -12,3 +15,9 @@ PATHS:
     - "./src/assets/javascript/slick_setup.js"
     - "./src/assets/javascript/jquery.lazy.js"
     - "./src/assets/javascript/lazy-loading.js"
+  stylesheet:
+    vendor:
+      - "./src/assets/vendor/bootstrap/css/bootstrap.css"
+      - "./src/assets/vendor/fontawesome-free/css/all.css"
+    css:
+      - "./src/assets/scss/agency.scss"

@@ -1,11 +1,15 @@
 const path = require("path");
 const webpack = require("webpack");
 const glob = require("glob");
+// const fglob = require("fast-glob");
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 
+const devMode = process.env.NODE_ENV !== 'production';
 const fs = require("fs");
 const yaml = require("js-yaml");
+const smp = new SpeedMeasurePlugin();
 
 function loadConfig() {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
@@ -14,69 +18,98 @@ function loadConfig() {
 
 const {PATHS} = loadConfig();
 
-module.exports = {
-  devtool: "eval-source-map",
+const jsBuild = smp.wrap({
+  devtool: devMode ? 'cheap-module-eval-source-map' : false,
   entry: {
+    // JS
     vendor: PATHS.vendor,
-    app: PATHS.javascript,
-    bootstrapFontAwesome: PATHS.stylesheet.vendor,
-    style: PATHS.stylesheet.css,
-    images: glob.sync(PATHS.assets.images),
-    fonts: glob.sync(PATHS.assets.fonts)
+    app: PATHS.javascript
   },
   output: {
     path: path.resolve(__dirname, PATHS.dist),
-    filename: "./js/[name].js"
+    filename: "./js/[name].js",
+    publicPath: "/dist/"
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, "./public"),
+    historyApiFallback: true,
+    port: 8080,
+    watchContentBase: true,
+    hot: true,
+    overlay: true
   },
   plugins: [
-    new WebpackBar(),
+    new WebpackBar({
+      name: "JS Build"
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery'
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].css'
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
     })
   ],
-
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
-      },
+      }
+    ]
+  }
+});
+
+const cssAssetsBuild = smp.wrap({
+  entry: {
+    // CSS
+    bootstrapVendor: PATHS.stylesheet.bootstrapVendor,
+    fontVendor: PATHS.stylesheet.fontVendor,
+    style: PATHS.stylesheet.css,
+
+    // ASSETS
+    images: glob.sync(PATHS.assets.images),
+    fonts: glob.sync(PATHS.assets.fonts)
+  },
+  output: {
+    path: path.resolve(__dirname, PATHS.dist),
+    filename: "./js/[name].js",
+    publicPath: "/dist/"
+  },
+  plugins: [
+    new WebpackBar({
+      name: "ASSETS & CSS Build",
+      color: "yellow"
+    }),
+    new MiniCssExtractPlugin({
+      filename: devMode ? 'css/[name].css' : 'css/[name].[hash:8].css',
+      chunkFilename: devMode ? 'css/[id].css' : 'css/[id].[hash:8].css',
+    })
+  ],
+  module: {
+    rules: [
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
+          'style-loader',
           {
-            loader: MiniCssExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'postcss-loader',
-          },
-          {
-            loader: 'resolve-url-loader'
-          },
-          {
-            loader: 'sass-loader',
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              sourceMap: true
+              hmr: devMode,
+              reloadAll: true
             }
-          }
-        ]
+          },
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
       {
-        test: /\.(eot|ttf|woff|woff2|svg)$/,
-        exclude: [
-          /images/,
-        ],
+        test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/,
         loader: 'file-loader',
         options: {
-          name: 'fonts/[name].[ext]'
+          name: '[name].[ext]',
+          outputPath: '/fonts/',
+          publicPath: '../fonts/'
         }
       },
       {
@@ -84,11 +117,27 @@ module.exports = {
         exclude: [
           /fonts/,
         ],
-        use: 'file-loader?name=/images/[folder]/[name].[ext]',
+        loader: 'file-loader',
+        options: {
+          name: '[folder]/[name].[ext]',
+          outputPath: '/images/',
+          publicPath: '../images/'
+        }
       },
     ]
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "./public")
-  }
-}
+    contentBase: path.resolve(__dirname, "./public"),
+    historyApiFallback: true,
+    port: 8080,
+    watchContentBase: true,
+    hot: true,
+    overlay: true
+  },
+});
+
+// if (!devMode) {
+//   jsBuild.optimization.minimizer = [new UglifyJsPlugin()]
+// }
+
+module.exports = [ jsBuild, cssAssetsBuild ];

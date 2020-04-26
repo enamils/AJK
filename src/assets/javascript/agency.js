@@ -1,3 +1,6 @@
+import 'bootstrap';
+import 'bootstrap/js/dist/util';
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -46,5 +49,20 @@
   $('.portfolio-modal').on('hidden.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
   })
+
+  let anchorlinks = document.querySelectorAll('a.js-scroll-trigger[href^="#"]')
+
+  for (let item of anchorlinks) { // relitere
+    item.addEventListener('click', (e) => {
+      let hashval = item.getAttribute('href')
+      let target = document.querySelector(hashval)
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+      history.pushState(null, null, hashval)
+      e.preventDefault()
+    })
+  }
 
 })(jQuery); // End of use strict

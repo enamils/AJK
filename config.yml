@@ -4,23 +4,16 @@ PATHS:
     images: "./src/assets/images/*/*"
     fonts: "./src/assets/fonts/*"
   vendor:
-    - "./src/assets/vendor/jquery/jquery.min.js"
-    # - "./src/assets/vendor/jquery-ui/jquery-ui.min.js"
-    - "./src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"
-    - "./src/assets/vendor/jquery-easing/jquery.easing.min.js"
+    - "./src/assets/vendor/jquery/jquery.slim.min.js"
   javascript:
     - "./src/assets/javascript/jqBootstrapValidation.js"
     - "./src/assets/javascript/contact_me.js"
     - "./src/assets/javascript/agency.js"
-    - "./src/assets/javascript/slick.js"
-    - "./src/assets/javascript/slick_setup.js"
-    # - "./src/assets/javascript/jquery.lazy.js"
-    #- "./src/assets/javascript/lazy-loading.js"
+    - "./src/assets/javascript/glide.js"
   stylesheet:
     bootstrapVendor:
       - "./src/assets/vendor/bootstrap/css/bootstrap.css"
     fontVendor:
-      # - "./src/assets/vendor/fontawesome-free/css/**/*"
       "./src/assets/vendor/fontawesome-free/css/all.min.css"
     css:
       - "./src/assets/scss/agency.scss"

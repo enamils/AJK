@@ -66,7 +66,7 @@ const cssAssetsBuild = smp.wrap({
     // CSS
     bootstrapVendor: PATHS.stylesheet.bootstrapVendor,
     fontVendor: PATHS.stylesheet.fontVendor,
-    style: PATHS.stylesheet.css,
+    app: PATHS.stylesheet.css,
 
     // ASSETS
     images: glob.sync(PATHS.assets.images),
@@ -108,6 +108,9 @@ const cssAssetsBuild = smp.wrap({
       {
         test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/,
         loader: 'file-loader',
+        exclude: [
+          /images/,
+        ],
         options: {
           name: '[name].[ext]',
           outputPath: '/fonts/',

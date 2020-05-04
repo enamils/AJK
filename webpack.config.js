@@ -5,6 +5,7 @@ const glob = require("glob");
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 const fs = require("fs");
@@ -46,7 +47,8 @@ const jsBuild = smp.wrap({
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-    })
+    }),
+    // new CleanWebpackPlugin()
   ],
   module: {
     rules: [
@@ -64,7 +66,7 @@ const cssAssetsBuild = smp.wrap({
     // CSS
     bootstrapVendor: PATHS.stylesheet.bootstrapVendor,
     fontVendor: PATHS.stylesheet.fontVendor,
-    style: PATHS.stylesheet.css,
+    app: PATHS.stylesheet.css,
 
     // ASSETS
     images: glob.sync(PATHS.assets.images),
@@ -106,6 +108,9 @@ const cssAssetsBuild = smp.wrap({
       {
         test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/,
         loader: 'file-loader',
+        exclude: [
+          /images/,
+        ],
         options: {
           name: '[name].[ext]',
           outputPath: '/fonts/',
@@ -125,19 +130,7 @@ const cssAssetsBuild = smp.wrap({
         }
       },
     ]
-  },
-  devServer: {
-    contentBase: path.resolve(__dirname, "./public"),
-    historyApiFallback: true,
-    port: 8080,
-    watchContentBase: true,
-    hot: true,
-    overlay: true
-  },
+  }
 });
-
-// if (!devMode) {
-//   jsBuild.optimization.minimizer = [new UglifyJsPlugin()]
-// }
 
 module.exports = [ jsBuild, cssAssetsBuild ];

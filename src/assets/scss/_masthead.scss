@@ -2,8 +2,24 @@
 header.masthead {
   text-align: center;
   color: white;
-  background: url('../images/ajk-bg/ajk-bg-1.png') no-repeat scroll center center;
   height: 100vh;
+
+  // &.lazyloaded {
+  //   background: url('../images/ajk-bg/ajk-bg-1.png') no-repeat scroll center center;
+  // }
+
+  @include respond-to(iPhone6) {
+    height: auto;
+  }
+  @include respond-to(iPhoneX) {
+    height: auto;
+  }
+  @include respond-to(iPhone8) {
+    height: auto;
+  }
+  @include respond-to(iPhone6Plus) {
+    height: auto;
+  }
   @include background-cover;
 
   .intro-text {

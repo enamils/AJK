@@ -1,24 +1,32 @@
 // Styling for the portfolio section
 #portfolio {
   .portfolio-item {
-    right: 0;
     margin: 0 0 15px;
 
     @include mediaQuery(mobile-end) {
       margin: 0 0 30px;
     }
 
+    .portfolio-card {
+      border: 1px solid $gray-300;
+      max-width: 300px;
+      margin: 0 auto;
+
+      @include mediaQuery(tablet) {
+        max-width: 400px;
+      }
+    }
+
     .portfolio-link {
       position: relative;
       display: block;
-      max-width: 400px;
-      margin: 0 auto;
+      // max-width: 400px;
+      // margin: 0 auto;
       cursor: pointer;
       .portfolio-hover {
         position: absolute;
         width: 100%;
         height: 100%;
-        -webkit-transition: all ease 0.5s;
         transition: all ease 0.5s;
         opacity: 0;
         background: fade-out($green-ajk, .1);
@@ -46,9 +54,12 @@
     }
     .portfolio-caption {
       max-width: 400px;
-      margin: 0 auto;
       min-height: 155px;
-      padding: 20px 20px 0 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
       text-align: center;
       background-color: $white;
       @include mediaQuery($desktop-wide) {
@@ -128,7 +139,6 @@
       height: 75px;
       margin-left: 35px;
       /* IE 9 */
-      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
       background-color: $orange-ajk;
       .rl {
@@ -137,7 +147,6 @@
         width: 1px;
         height: 75px;
         /* IE 9 */
-        -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
         background-color: $orange-ajk;
       }

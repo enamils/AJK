@@ -5,7 +5,8 @@ const glob = require("glob");
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const devMode = process.env.NODE_ENV !== 'production';
 const fs = require("fs");
@@ -20,7 +21,7 @@ function loadConfig() {
 const {PATHS} = loadConfig();
 
 const jsBuild = smp.wrap({
-  devtool: devMode ? 'cheap-module-eval-source-map' : false,
+  // devtool: devMode ? 'cheap-module-eval-source-map' : false,
   entry: {
     // JS
     vendor: PATHS.vendor,
@@ -37,6 +38,7 @@ const jsBuild = smp.wrap({
     port: 8080,
     watchContentBase: true,
     hot: true,
+    inline: true,
     overlay: true
   },
   plugins: [
@@ -48,6 +50,7 @@ const jsBuild = smp.wrap({
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
+    // new BundleAnalyzerPlugin()
     // new CleanWebpackPlugin()
   ],
   module: {
@@ -130,7 +133,7 @@ const cssAssetsBuild = smp.wrap({
         }
       },
     ]
-  }
+  },
 });
 
 module.exports = [ jsBuild, cssAssetsBuild ];

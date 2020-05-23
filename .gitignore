@@ -149,6 +149,8 @@ typings/
 # dotenv environment variables file
 .env
 
+public/
+css/
 
 
 # End of https://www.gitignore.io/api/node,macos

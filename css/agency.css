@@ -1022,6 +1022,7 @@ em,
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -1115,6 +1116,7 @@ em,
   background: transparent;
   color: transparent;
   top: 50%;
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
   border: none;
@@ -1267,6 +1269,7 @@ em,
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
@@ -1294,6 +1297,7 @@ em,
 
 @media only screen and (min-width: 992px) {
   #mainNav .navbar-brand {
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
 }
@@ -1489,6 +1493,7 @@ header.masthead .intro-text h1 {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
   background: rgba(208, 239, 132, 0.9);
@@ -1616,6 +1621,7 @@ header.masthead .intro-text h1 {
   height: 75px;
   margin-left: 35px;
   /* IE 9 */
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #e59a47;
 }
@@ -1626,6 +1632,7 @@ header.masthead .intro-text h1 {
   width: 1px;
   height: 75px;
   /* IE 9 */
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: #e59a47;
 }
@@ -1923,11 +1930,13 @@ section#contact :-ms-input-placeholder {
   list-style: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   touch-action: pan-Y;
   overflow: hidden;
   padding: 0;
   white-space: nowrap;
+  display: -webkit-box;
   display: flex;
   flex-wrap: nowrap;
   will-change: transform;
@@ -1996,7 +2005,9 @@ section#contact :-ms-input-placeholder {
   text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
   opacity: 1;
   cursor: pointer;
+  -webkit-transition: opacity 150ms ease, border 300ms ease-in-out;
   transition: opacity 150ms ease, border 300ms ease-in-out;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   line-height: 1;
 }
@@ -2026,8 +2037,10 @@ section#contact :-ms-input-placeholder {
   z-index: 2;
   bottom: 2em;
   left: 50%;
+  display: -webkit-inline-box;
   display: inline-flex;
   list-style: none;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -2038,6 +2051,7 @@ section#contact :-ms-input-placeholder {
   padding: 0;
   border-radius: 50%;
   border: 2px solid transparent;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   cursor: pointer;
   line-height: 0;
@@ -2097,6 +2111,7 @@ ul.social-buttons li a {
   display: block;
   width: 40px;
   height: 40px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: white;
   border-radius: 100%;

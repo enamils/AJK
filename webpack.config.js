@@ -5,7 +5,8 @@ const glob = require("glob");
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const PurgecssPlugin = require("purgecss-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const devMode = process.env.NODE_ENV !== 'production';
@@ -19,9 +20,11 @@ function loadConfig() {
 }
 
 const {PATHS} = loadConfig();
+const PATH_SRC = {
+  src: path.resolve(__dirname, PATHS.src)
+}
 
 const jsBuild = smp.wrap({
-  // devtool: devMode ? 'cheap-module-eval-source-map' : false,
   entry: {
     // JS
     vendor: PATHS.vendor,
@@ -50,8 +53,11 @@ const jsBuild = smp.wrap({
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
+    // new PurgecssPlugin({
+    //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
+    //   // only: ['jquery', 'bootstrap']
+    // }),
     // new BundleAnalyzerPlugin()
-    // new CleanWebpackPlugin()
   ],
   module: {
     rules: [
@@ -85,10 +91,13 @@ const cssAssetsBuild = smp.wrap({
       name: "ASSETS & CSS Build",
       color: "yellow"
     }),
+    // new PurgecssPlugin({
+    //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
+    // }),
     new MiniCssExtractPlugin({
       filename: devMode ? 'css/[name].css' : 'css/[name].[hash:8].css',
       chunkFilename: devMode ? 'css/[id].css' : 'css/[id].[hash:8].css',
-    })
+    }),
   ],
   module: {
     rules: [
@@ -135,5 +144,9 @@ const cssAssetsBuild = smp.wrap({
     ]
   },
 });
+
+if (devMode) {
+  jsBuild.devtool = 'cheap-module-eval-source-map';
+}
 
 module.exports = [ jsBuild, cssAssetsBuild ];

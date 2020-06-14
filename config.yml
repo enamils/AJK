@@ -1,5 +1,6 @@
 PATHS:
   dist: "./public/dist"
+  src: "./src/assets/vendor"
   assets:
     images: "./src/assets/images/*/*"
     fonts: "./src/assets/fonts/*"

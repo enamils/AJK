@@ -79,7 +79,7 @@ const off = player.$on('data', e => {
 // Destroy
 off();
 
-/*--- ---*/
+/*--- LAZYLOAD BACKGROUND IMG ---*/
 
 (function (window, factory) {
   var globalInstall = function () {

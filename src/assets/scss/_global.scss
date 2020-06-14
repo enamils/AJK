@@ -202,3 +202,15 @@ footer {
   transition: opacity 300ms;
 }
 
+.mobile-only {
+  display: none;
+  @include mediaQuery(mobile-end) {
+    display: block;
+  }
+}
+
+.mobile-font-size {
+  @include mediaQuery(mobile-end) {
+    font-size: .9rem;
+  }
+}

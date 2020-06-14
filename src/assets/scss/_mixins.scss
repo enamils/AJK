@@ -11,11 +11,11 @@
 
 @mixin caviar-dream-font {
   font-family: 'Caviar Dreams',
-  'Montserrat',
-  'Helvetica Neue',
-  Helvetica,
-  Arial,
-  sans-serif;
+    'Montserrat',
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 @mixin caviar-dream {
@@ -27,6 +27,7 @@
     font-style: italic;
   }
 }
+
 // Mixin for media Query
 @mixin mediaQuery($mediaQuery) {
   @if $mediaQuery==mobile {
@@ -34,41 +35,55 @@
       @content;
     }
   }
+
+  @else if $mediaQuery==mobile-portrait-end {
+    @media only screen and (max-width: $mobile-portrait-end) {
+      @content;
+    }
+  }
+
   @else if $mediaQuery==mobile-landscape {
     @media only screen and (min-width: $mobile-landscape) {
       @content;
     }
   }
+
   @else if $mediaQuery==mobile-end {
     @media only screen and (max-width: $mobile-end) {
       @content;
     }
   }
+
   @else if $mediaQuery==tablet {
     @media only screen and (min-width: $tablet) {
       @content;
     }
   }
+
   @else if $mediaQuery==tablet-end {
     @media only screen and (max-width: $tablet-end) {
       @content;
     }
   }
+
   @else if $mediaQuery==tablet-desktop {
     @media only screen and (min-width: $tablet-desktop) {
       @content;
     }
   }
+
   @else if $mediaQuery==desktop {
     @media only screen and (min-width: $desktop) {
       @content;
     }
   }
+
   @else if $mediaQuery==desktop-end {
     @media only screen and (max-width: $desktop-end) {
       @content;
     }
   }
+
   @else if $mediaQuery==desktop-wide {
     @media only screen and (min-width: $desktop-wide) {
       @content;
@@ -78,4 +93,30 @@
 
 @mixin text-color($text-color) {
   color: $text-color;
+}
+
+@mixin respond-to($media) {
+  @if $media==iPhoneX {
+    @media only screen and (min-device-width : 375px) and (max-device-height : 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio : 3) {
+      @content;
+    }
+  }
+
+  @else if $media==iPhone6 {
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    }
+  }
+
+  @else if $media==iPhone8 {
+    @media only screen and (min-device-width : 375px) and (max-device-height : 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio : 2) {
+      @content;
+    }
+  }
+
+  @else if $media==iPhone6Plus {
+    @media only screen and (min-device-width : 414px) and (max-device-height : 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio : 3) {
+      @content;
+    }
+  }
 }

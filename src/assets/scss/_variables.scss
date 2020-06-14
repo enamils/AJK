@@ -34,6 +34,7 @@ $tablet-desktop: 992px;
 $desktop: 1024px;
 $desktop-wide: 1200px;
 // Responsive max breakpoint
+$mobile-portrait-end: $mobile-landscape - 1px;
 $mobile-end: $tablet - 1px;
 $tablet-end: $desktop - 1px;
 $desktop-end: $desktop-wide - 1px;

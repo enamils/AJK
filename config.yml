@@ -1,10 +1,11 @@
 PATHS:
   dist: "./public/dist"
+  src: "./src/assets/vendor"
   assets:
     images: "./src/assets/images/*/*"
     fonts: "./src/assets/fonts/*"
   vendor:
-    - "./src/assets/vendor/jquery/jquery.min.js"
+    - "./src/assets/vendor/jquery/jquery.slim.min.js"
   javascript:
     - "./src/assets/javascript/jqBootstrapValidation.js"
     - "./src/assets/javascript/contact_me.js"

@@ -1,14 +1,33 @@
 .medias {
-    .video-container {
+
+    .follow-us {
+
+        display: flex;
+
+        a {
+            @include mediaQuery(mobile-end) {
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+
+        &--text {
+            @include mediaQuery(mobile-portrait-end) {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .iframe-container {
         position: relative;
         padding-bottom: 56.25%; /* ratio 16/9 */
         height: 0; overflow: hidden;
         clear: both;
     }
 
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
+    .iframe-container iframe,
+    .iframe-container object,
+    .iframe-container embed {
         position: absolute;
         top: 0;
         left: 0;

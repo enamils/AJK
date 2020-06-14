@@ -4,8 +4,6 @@
   @include mediaQuery(tablet-desktop) {
     padding-top: 25px;
     padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s,
-    padding-bottom 0.3s;
     transition: padding-top 0.3s,
     padding-bottom 0.3s;
     border: none;
@@ -31,7 +29,6 @@
     }
 
     @include mediaQuery(tablet-desktop) {
-      -webkit-transition: all 0.3s;
       transition: all 0.3s;
     }
 

@@ -145,8 +145,8 @@ const cssAssetsBuild = smp.wrap({
   },
 });
 
-if (devMode) {
-  jsBuild.devtool = 'cheap-module-eval-source-map';
-}
+// if (devMode) {
+//   jsBuild.devtool = 'cheap-module-eval-source-map';
+// }
 
 module.exports = [ jsBuild, cssAssetsBuild ];

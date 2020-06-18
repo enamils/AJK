@@ -1,0 +1,33 @@
+.parralax-section- {
+
+  &-dbk1,
+  &-dbk2,
+  &-dbk3 {
+      height: 500px;
+      // @include mediaQuery(mobile-end) {
+      //   background-position: left;
+      // }
+  }
+
+  &-dbk1 {
+    background: url('../images/ajk-bg/dabankou-1-parrallax.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 14rem;
+  }
+
+  &-dbk2 {
+    background: url('../images/ajk-bg/dabankou-2-parrallax.jpg') no-repeat center;
+    background-size: cover;
+    // margin-top: 1rem;
+  }
+
+  &-dbk3 {
+    background: url('../images/ajk-bg/dabankou-3-parrallax.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 3rem;
+  }
+}
+
+.parralax-section {
+  overflow: hidden;
+}

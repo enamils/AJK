@@ -1,0 +1,23 @@
+.project,
+.project-bis {
+    h4 {
+        font-size: 20px;
+    }
+
+    .glide__slide {
+
+        filter: blur(6px);
+        opacity: .7;
+        transition: .3s linear;
+
+        img {
+            width: 100%;
+        }
+
+        &--active {
+            opacity: 1;
+            filter: none;
+            transform: scale(1.1);
+        }
+    }
+}

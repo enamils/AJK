@@ -1,0 +1,73 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: white;
+  height: 100vh;
+
+  // &.lazyloaded {
+  //   background: url('../images/ajk-bg/ajk-bg-1.png') no-repeat scroll center center;
+  // }
+
+  @include respond-to(iPhone6) {
+    height: auto;
+  }
+  @include respond-to(iPhoneX) {
+    height: auto;
+  }
+  @include respond-to(iPhone8) {
+    height: auto;
+  }
+  @include respond-to(iPhone6Plus) {
+    height: auto;
+  }
+  @include background-cover;
+
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    @include mediaQuery(tablet) {
+      padding-top: 190px;
+      padding-bottom: 200px;
+    }
+
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+
+      @include mediaQuery(tablet) {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .intro-heading {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      @include caviar-dream-font;
+
+      @include mediaQuery(tablet) {
+        font-size: 25px;
+        line-height: 75px;
+      }
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: $black-ajk;
+      @include caviar-dream-font;
+
+      @include mediaQuery(tablet) {
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

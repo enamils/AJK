@@ -1,0 +1,21 @@
+// Styling for the services section
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+  color: $orange-ajk;
+  font-size: 20px;
+  @include caviar-dream-font;
+}
+
+.association {
+  p {
+    text-align: left;
+  }
+}
+
+.partenary-section {
+  h4 {
+    font-size: 1.3em;
+    @include caviar-dream-font;
+   }
+}

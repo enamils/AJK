@@ -1,0 +1,216 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.85;
+}
+
+a {
+  color: $blue-ajk;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $orange-ajk !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 150%;
+}
+
+section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: $orange-ajk;
+    @include caviar-dream-font;
+
+    @include mediaQuery(tablet) {
+      font-size: 40px;
+      @include caviar-dream-font;
+    }
+  }
+  h3.section-subheading {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    text-transform: none;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 50px;
+      height: 2px;
+      background-color: $orange-ajk;
+    }
+
+    @include mediaQuery(mobile-end) {
+      font-size: 16px;
+    }
+  }
+
+}
+@include mediaQuery(tablet) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// Button Styles
+.btn {
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: $orange-ajk;
+  border-color: $orange-ajk;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+
+  box-shadow: 0 3px 7px 1px rgba($orange-ajk, 0.6);
+}
+
+.text-color {
+  &_orange {
+    @include text-color($orange-ajk);
+  }
+
+  &_black {
+    @include text-color($black-ajk);
+  }
+
+  &_green {
+    @include text-color($green-ajk);
+  }
+
+  &_beige {
+    @include text-color($beige-ajk);
+  }
+
+  &_white {
+    @include text-color($white);
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+img {
+  &.responsive-img {
+    max-width: 40%;
+
+    @include mediaQuery(tablet) {
+      max-width: 25%;
+    }
+    @include mediaQuery(desktop-wide) {
+      max-width: 15%;
+    }
+  }
+  &.responsive-map-img {
+    max-width: 100%;
+
+    @include mediaQuery(tablet) {
+      max-width: 45%;
+    }
+  }
+  &.responsive-img-maquette {
+    max-width: 100%;
+    margin: 0 auto;
+
+    @include mediaQuery(tablet) {
+      max-width: 75%;
+    }
+  }
+  &.responsive-img-other {
+    max-width: 100%;
+  }
+}
+
+.boxShadow {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.0);
+}
+
+strong {
+  color: $orange-ajk;
+  @include caviar-dream-font;
+}
+
+footer {
+  background-color: $red-mauve-ajk;
+}
+
+.roundbox {
+  @include mediaQuery(tablet) {
+    border-radius: 50%;
+  }
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.mobile-only {
+  display: none;
+  @include mediaQuery(mobile-end) {
+    display: block;
+  }
+}
+
+.mobile-font-size {
+  @include mediaQuery(mobile-end) {
+    font-size: .9rem;
+  }
+}

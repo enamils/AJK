@@ -1,0 +1,21 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+@import "useful.scss";
+@import "usefulbreakpoint.scss";
+// Components
+@import "navbar.scss";
+@import "masthead.scss";
+@import "parralax.scss";
+@import "medias.scss";
+@import "services.scss";
+@import "portfolio.scss";
+@import "timeline.scss";
+@import "team.scss";
+@import "project.scss";
+@import "contact.scss";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "footer.scss";

@@ -106,11 +106,11 @@ const cssAssetsBuild = smp.wrap({
         use: [
           'style-loader',
           {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: devMode,
-              reloadAll: true
-            }
+            loader: MiniCssExtractPlugin.loader
+            // options: {
+            //   hmr: devMode,
+            //   reloadAll: true
+            // }
           },
           'css-loader',
           'postcss-loader',

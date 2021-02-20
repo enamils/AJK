@@ -14,7 +14,7 @@
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: white;
+    color: $white;
     border: 0;
     background-color: $orange-ajk;
     @include caviar-dream-font;
@@ -54,7 +54,7 @@
         font-size: 90%;
         font-weight: 600;
         letter-spacing: 1px;
-        color: white;
+        color: $white;
         @include caviar-dream-font;
 
         &.active,

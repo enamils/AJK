@@ -17,7 +17,8 @@ Icon
 *.css.map
 
 ### FILES ###
-public/dist
+public/dist/
+package-lock.json
 
 # CMake
 cmake-build-debug/

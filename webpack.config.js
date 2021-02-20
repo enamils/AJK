@@ -25,6 +25,7 @@ const PATH_SRC = {
 }
 
 const jsBuild = smp.wrap({
+  devtool: devMode ? 'eval-cheap-module-source-map' : false,
   entry: {
     // JS
     vendor: PATHS.vendor,
@@ -39,11 +40,12 @@ const jsBuild = smp.wrap({
     contentBase: path.resolve(__dirname, "./public"),
     historyApiFallback: true,
     port: 8080,
-    watchContentBase: true,
     hot: true,
-    inline: true,
-    overlay: true
+    compress: true,
+    open: true,
+    disableHostCheck: true
   },
+  target: 'web',
   plugins: [
     new WebpackBar({
       name: "JS Build"
@@ -53,6 +55,7 @@ const jsBuild = smp.wrap({
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
+    // new CleanWebpackPlugin(),
     // new PurgecssPlugin({
     //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
     //   // only: ['jquery', 'bootstrap']
@@ -71,6 +74,7 @@ const jsBuild = smp.wrap({
 });
 
 const cssAssetsBuild = smp.wrap({
+  devtool: devMode ? 'source-map' : false,
   entry: {
     // CSS
     bootstrapVendor: PATHS.stylesheet.bootstrapVendor,
@@ -86,35 +90,35 @@ const cssAssetsBuild = smp.wrap({
     filename: "./js/[name].js",
     publicPath: "/dist/"
   },
-  plugins: [
-    new WebpackBar({
-      name: "ASSETS & CSS Build",
-      color: "yellow"
-    }),
-    // new PurgecssPlugin({
-    //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
-    // }),
-    new MiniCssExtractPlugin({
-      filename: devMode ? 'css/[name].css' : 'css/[name].[hash:8].css',
-      chunkFilename: devMode ? 'css/[id].css' : 'css/[id].[hash:8].css',
-    }),
-  ],
   module: {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          'style-loader',
           {
-            loader: MiniCssExtractPlugin.loader
-            // options: {
-            //   hmr: devMode,
-            //   reloadAll: true
-            // }
+            loader: MiniCssExtractPlugin.loader,
+             options: {
+              esModule: false,
+            },
           },
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          }
         ],
       },
       {
@@ -143,10 +147,29 @@ const cssAssetsBuild = smp.wrap({
       },
     ]
   },
+  plugins: [
+    new WebpackBar({
+      name: "ASSETS & CSS Build",
+      color: "yellow"
+    }),
+    // new PurgecssPlugin({
+    //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
+    // }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].css',
+      chunkFilename: 'css/[id].css',
+    }),
+    new CleanWebpackPlugin({
+      dry: true,
+    }),
+  ],
 });
 
-// if (devMode) {
-//   jsBuild.devtool = 'cheap-module-eval-source-map';
-// }
+if (devMode) {
+  jsBuild.plugins.push(new webpack.HotModuleReplacementPlugin()),
+  cssAssetsBuild.plugins.push(new webpack.HotModuleReplacementPlugin())
+}
+
+console.log("devMode ==>", devMode);
 
 module.exports = [ jsBuild, cssAssetsBuild ];

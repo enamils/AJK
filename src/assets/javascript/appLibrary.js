@@ -127,31 +127,13 @@ off();
     addEventListener('lazybeforeunveil', function (e) {
       if (e.detail.instance != lazySizes) { return; }
 
-      var tmp, load, bg, poster;
+      var tmp, load, bg;
       if (!e.defaultPrevented) {
 
         var target = e.target;
 
         if (target.preload == 'none') {
           target.preload = target.getAttribute('data-preload') || 'auto';
-        }
-
-        if (target.getAttribute('data-autoplay') != null) {
-          if (target.getAttribute('data-expand') && !target.autoplay) {
-            try {
-              target.play();
-            } catch (er) { }
-          } else {
-            requestAnimationFrame(function () {
-              target.setAttribute('data-expand', '-10');
-              lazySizes.aC(target, lazySizes.cfg.lazyClass);
-            });
-          }
-        }
-
-        tmp = target.getAttribute('data-link');
-        if (tmp) {
-          addStyleScript(tmp, true);
         }
 
         // handle data-script
@@ -182,23 +164,8 @@ off();
 
           bgLoad(bg, load);
         }
-
-        // handle data-poster
-        poster = target.getAttribute('data-poster');
-        if (poster) {
-          e.detail.firesLoad = true;
-          load = function () {
-            target.poster = poster;
-            e.detail.firesLoad = false;
-            lazySizes.fire(target, '_lazyloaded', {}, true, true);
-          };
-
-          bgLoad(poster, load);
-
-        }
       }
     }, false);
-
   }
 
   function addStyleScript(src, style) {
@@ -219,3 +186,16 @@ off();
     insertElem.parentNode.insertBefore(elem, insertElem);
   }
 }));
+
+/*---  FOOTER COPYRIGHT YEAR   --*/
+
+window.addEventListener('load', () => {
+  (function () {
+    let footerCopyrightYear = new Date();
+    if (document.querySelector(".footer-copyright") !== null) {
+      document.querySelector(".footer-copyright").innerText = footerCopyrightYear.getFullYear();
+    }
+  })();
+});
+
+console.log("mkhbkjbhj");

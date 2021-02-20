@@ -95,7 +95,7 @@
   color: $text-color;
 }
 
-@mixin respond-to($media) {
+@mixin mediaIphone($media) {
   @if $media==iPhoneX {
     @media only screen and (min-device-width : 375px) and (max-device-height : 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio : 3) {
       @content;

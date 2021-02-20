@@ -159,9 +159,9 @@ const cssAssetsBuild = smp.wrap({
       filename: 'css/[name].css',
       chunkFilename: 'css/[id].css',
     }),
-    new CleanWebpackPlugin({
-      dry: true,
-    }),
+    // new CleanWebpackPlugin({
+    //   dry: true,
+    // }),
   ],
 });
 
@@ -169,7 +169,5 @@ if (devMode) {
   jsBuild.plugins.push(new webpack.HotModuleReplacementPlugin()),
   cssAssetsBuild.plugins.push(new webpack.HotModuleReplacementPlugin())
 }
-
-console.log("devMode ==>", devMode);
 
 module.exports = [ jsBuild, cssAssetsBuild ];

@@ -18,7 +18,6 @@ Icon
 
 ### FILES ###
 public/dist/
-package-lock.json
 
 # CMake
 cmake-build-debug/

@@ -1,12 +1,11 @@
 const path = require("path");
 const webpack = require("webpack");
 const glob = require("glob");
-// const fglob = require("fast-glob");
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 // const PurgecssPlugin = require("purgecss-webpack-plugin");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const devMode = process.env.NODE_ENV !== 'production';

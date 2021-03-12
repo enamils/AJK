@@ -20,8 +20,6 @@
     .portfolio-link {
       position: relative;
       display: block;
-      // max-width: 400px;
-      // margin: 0 auto;
       cursor: pointer;
       .portfolio-hover {
         position: absolute;
@@ -29,7 +27,7 @@
         height: 100%;
         transition: all ease 0.5s;
         opacity: 0;
-        background: fade-out($green-ajk, .1);
+        background: fade-out($orange-ajk, .1);
         &:hover {
           opacity: 1;
         }
@@ -69,7 +67,7 @@
         margin: 0;
         text-transform: none;
         font-size: 18px;
-        color: $blue-ajk;
+        color: $red-mauve-ajk;
         @include caviar-dream-font;
       }
       p {

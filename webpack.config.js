@@ -28,11 +28,11 @@ const jsBuild = smp.wrap({
   },
   output: {
     path: path.resolve(__dirname, PATHS.dist),
-    filename: "./js/[name].js",
-    publicPath: "/dist/"
+    filename: "js/[name].js",
+    publicPath: "dist/"
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "./public/dist"),
+    contentBase: path.resolve(__dirname, PATHS.dist),
     watchContentBase: true,
     historyApiFallback: true,
     compress: true,
@@ -49,7 +49,8 @@ const jsBuild = smp.wrap({
       'window.jQuery': 'jquery',
     }),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      filename: 'index.html',
+      template: 'index.ejs'
     }),
   ],
   module: {
@@ -58,7 +59,14 @@ const jsBuild = smp.wrap({
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
-      }
+      },
+      {
+        test: /\.ejs$/,
+        loader: 'ejs-loader',
+        options: {
+          esModule: false
+        }
+      },
     ]
   }
 });
@@ -77,7 +85,7 @@ const cssAssetsBuild = smp.wrap({
   },
   output: {
     path: path.resolve(__dirname, PATHS.dist),
-    filename: "./js/[name].js",
+    filename: "js/[name].js",
     publicPath: "/dist/"
   },
   module: {
@@ -175,7 +183,5 @@ if (devMode) {
   jsBuild.plugins.push(new webpack.HotModuleReplacementPlugin()),
   cssAssetsBuild.plugins.push(new webpack.HotModuleReplacementPlugin())
 }
-
-console.log("devMode ==>", devMode);
 
 module.exports = [ jsBuild, cssAssetsBuild ];

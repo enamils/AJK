@@ -137,12 +137,34 @@ const cssAssetsBuild = smp.wrap({
         exclude: [
           /fonts/,
         ],
-        loader: 'file-loader',
-        options: {
-          name: '[folder]/[name].[ext]',
-          outputPath: '/images/',
-          publicPath: '../images/'
-        }
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[folder]/[name].[ext]',
+              outputPath: '/images/',
+              publicPath: '../images/'
+            }
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                quality: 50,
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false,
+              }
+            }
+          },
+        ],
       },
     ]
   },

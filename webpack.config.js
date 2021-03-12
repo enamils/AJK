@@ -4,8 +4,7 @@ const glob = require("glob");
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
-// const PurgecssPlugin = require("purgecss-webpack-plugin");
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const devMode = process.env.NODE_ENV !== 'production';
@@ -19,9 +18,6 @@ function loadConfig() {
 }
 
 const {PATHS} = loadConfig();
-const PATH_SRC = {
-  src: path.resolve(__dirname, PATHS.src)
-}
 
 const jsBuild = smp.wrap({
   devtool: devMode ? 'eval-cheap-module-source-map' : false,
@@ -36,12 +32,10 @@ const jsBuild = smp.wrap({
     publicPath: "/dist/"
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "./public"),
+    contentBase: path.resolve(__dirname, "./public/dist"),
+    watchContentBase: true,
     historyApiFallback: true,
-    port: 8080,
-    hot: true,
     compress: true,
-    open: true,
     disableHostCheck: true
   },
   target: 'web',
@@ -54,12 +48,9 @@ const jsBuild = smp.wrap({
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-    // new CleanWebpackPlugin(),
-    // new PurgecssPlugin({
-    //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
-    //   // only: ['jquery', 'bootstrap']
-    // }),
-    // new BundleAnalyzerPlugin()
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+    }),
   ],
   module: {
     rules: [
@@ -95,10 +86,7 @@ const cssAssetsBuild = smp.wrap({
         test: /\.(sa|sc|c)ss$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
-             options: {
-              esModule: false,
-            },
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: "css-loader",
@@ -173,9 +161,6 @@ const cssAssetsBuild = smp.wrap({
       name: "ASSETS & CSS Build",
       color: "yellow"
     }),
-    // new PurgecssPlugin({
-    //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
-    // }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
       chunkFilename: 'css/[id].css',
@@ -190,5 +175,7 @@ if (devMode) {
   jsBuild.plugins.push(new webpack.HotModuleReplacementPlugin()),
   cssAssetsBuild.plugins.push(new webpack.HotModuleReplacementPlugin())
 }
+
+console.log("devMode ==>", devMode);
 
 module.exports = [ jsBuild, cssAssetsBuild ];

@@ -46,7 +46,7 @@ const jsBuild = smp.wrap({
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery',
+      'window.jQuery': 'jquery'
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
@@ -62,10 +62,17 @@ const jsBuild = smp.wrap({
       },
       {
         test: /\.ejs$/,
-        loader: 'ejs-loader',
-        options: {
-          esModule: false
-        }
+        use: [
+          {
+            loader: 'compile-ejs-loader',
+            options: {
+              'htmlminOptions': {
+                removeComments: true,
+                preventAttributesEscaping: true
+              }
+            }
+          }
+        ],
       },
     ]
   }

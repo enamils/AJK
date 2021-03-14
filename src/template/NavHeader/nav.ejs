@@ -1,3 +1,29 @@
+  <%_ const navHeader = [
+    {
+      anchor: "services",
+      nav: "L'association"
+    },
+    {
+      anchor: "portfolio",
+      nav: "Nos actions"
+    },
+    {
+      anchor: "about",
+      nav: "Notre projet"
+    },
+    {
+      anchor: "team",
+      nav: "Médias"
+    },
+    {
+      anchor: "donation",
+      nav: "Nous soutenir"
+    },
+    {
+      anchor: "contact",
+      nav: "Contact"
+    }
+  ]  _%>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger logo-ajk" href="#page-top" title="logo ajk"></a>
@@ -9,24 +35,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
+        <%_ navHeader.forEach(item => { _%>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">L'association</a>
+            <a class="nav-link js-scroll-trigger" href="#<%= item.anchor %>"><%= item.nav %></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Nos actions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Notre projet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Médias</a>
-          </li>
-          <li class="nav-item">
-            <a href="#donation" class="nav-link js-scroll-trigger">Nous soutenir</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
+        <%_ }); _%>
         </ul>
       </div>
     </div>

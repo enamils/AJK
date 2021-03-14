@@ -1,3 +1,21 @@
+  <%_ const socialMediaFooter = [
+    {
+      link: "https://www.facebook.com/AJK-Association-des-Jeunes-de-kakand%C3%A9-1890930947858951/",
+      icon: "fa-facebook-f"
+    },
+    {
+      link: "https://www.instagram.com/association.ajk/",
+      icon: "fa-instagram"
+    },
+    {
+      link: "https://www.youtube.com/channel/UCLvj9n7eiTphuqb_oaZTMxA",
+      icon: "fa-youtube"
+    },
+    {
+      link: "https://twitter.com/ajk_association",
+      icon: "fa-twitter"
+    }
+  ]  _%>
   <footer>
     <div class="container">
       <div class="row text-color_white">
@@ -5,26 +23,13 @@
           <div class="row">
             <div class="col-md-6">
               <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/AJK-Association-des-Jeunes-de-kakand%C3%A9-1890930947858951/" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/association.ajk/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.youtube.com/channel/UCLvj9n7eiTphuqb_oaZTMxA" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/ajk_association" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
+                <%_ socialMediaFooter.forEach(item => { _%>
+                  <li class="list-inline-item">
+                    <a href="<%= item.link %>" target="_blank">
+                      <i class="fab <%= item.icon %>"></i>
+                    </a>
+                  </li>
+                <%_ }); _%>
               </ul>
             </div>
             <div class="col-md-6">

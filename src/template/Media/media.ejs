@@ -1,3 +1,21 @@
+  <%_ const socialMedia = [
+    {
+      link: "https://www.facebook.com/AJK-Association-des-Jeunes-de-kakand%C3%A9-1890930947858951/",
+      icon: "fa-facebook-f"
+    },
+    {
+      link: "https://www.instagram.com/association.ajk/",
+      icon: "fa-instagram"
+    },
+    {
+      link: "https://www.youtube.com/channel/UCLvj9n7eiTphuqb_oaZTMxA",
+      icon: "fa-youtube"
+    },
+    {
+      link: "https://twitter.com/ajk_association",
+      icon: "fa-twitter"
+    }
+  ] _%>
   <section class="bg-light medias" id="team">
     <div class="container">
       <div class="row">
@@ -23,39 +41,16 @@
                 </span>
               </a>
             </li>
+            <%_ socialMedia.forEach(item => { _%>
             <li>
-              <a href="https://www.facebook.com/AJK-Association-des-Jeunes-de-kakand%C3%A9-1890930947858951/"
-                target="_blank">
+              <a href="<%= item.link %>" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  <i class="fab <%= item.icon %> fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
-            <li>
-              <a href="https://www.instagram.com/association.ajk/" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/ajk_association" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UCLvj9n7eiTphuqb_oaZTMxA" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
+            <%_ }); _%>
           </ul>
           <div class="iframe-container center">
             <iframe

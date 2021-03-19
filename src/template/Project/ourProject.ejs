@@ -127,10 +127,9 @@
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
               </div>
               <div class="glide__bullets" data-glide-el="controls[nav]">
-                <button class="glide__bullet" data-glide-dir="=0"></button>
-                <button class="glide__bullet" data-glide-dir="=1"></button>
-                <button class="glide__bullet" data-glide-dir="=2"></button>
-                <button class="glide__bullet" data-glide-dir="=3"></button>
+                <%_ for(let i = 0; i < 3; i++) { _%>
+                <button class="glide__bullet" data-glide-dir="=<%= [i] %>"></button>
+                <%_ } _%>
               </div>
             </div>
           </div>
@@ -222,12 +221,9 @@
                   <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
                 </div>
                 <div class="glide__bullets" data-glide-el="controls[nav]">
-                  <button class="glide__bullet" data-glide-dir="=0"></button>
-                  <button class="glide__bullet" data-glide-dir="=1"></button>
-                  <button class="glide__bullet" data-glide-dir="=2"></button>
-                  <button class="glide__bullet" data-glide-dir="=3"></button>
-                  <button class="glide__bullet" data-glide-dir="=4"></button>
-                  <button class="glide__bullet" data-glide-dir="=5"></button>
+                  <%_ for(let j = 0; j < 5; j++) { _%>
+                  <button class="glide__bullet" data-glide-dir="=<%= [j] %>"></button>
+                  <%_ } _%>
                 </div>
               </div>
               <div class="mt-4">
@@ -273,19 +269,9 @@
                     <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
                   </div>
                   <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                    <button class="glide__bullet" data-glide-dir="=4"></button>
-                    <button class="glide__bullet" data-glide-dir="=5"></button>
-                    <button class="glide__bullet" data-glide-dir="=6"></button>
-                    <button class="glide__bullet" data-glide-dir="=7"></button>
-                    <button class="glide__bullet" data-glide-dir="=8"></button>
-                    <button class="glide__bullet" data-glide-dir="=9"></button>
-                    <button class="glide__bullet" data-glide-dir="=10"></button>
-                    <button class="glide__bullet" data-glide-dir="=11"></button>
-                    <button class="glide__bullet" data-glide-dir="=12"></button>
+                    <%_ for(let k = 0; k < 12; k++) { _%>
+                    <button class="glide__bullet" data-glide-dir="=<%= [k] %>"></button>
+                    <%_ } _%>
                   </div>
                 </div>
                 <p class="mt-4 bold">2<sup>ème</sup> phase</p>
@@ -329,20 +315,9 @@
                     <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
                   </div>
                   <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                    <button class="glide__bullet" data-glide-dir="=4"></button>
-                    <button class="glide__bullet" data-glide-dir="=5"></button>
-                    <button class="glide__bullet" data-glide-dir="=6"></button>
-                    <button class="glide__bullet" data-glide-dir="=7"></button>
-                    <button class="glide__bullet" data-glide-dir="=8"></button>
-                    <button class="glide__bullet" data-glide-dir="=9"></button>
-                    <button class="glide__bullet" data-glide-dir="=10"></button>
-                    <button class="glide__bullet" data-glide-dir="=11"></button>
-                    <button class="glide__bullet" data-glide-dir="=12"></button>
-                    <button class="glide__bullet" data-glide-dir="=13"></button>
+                    <%_ for(let l = 0; l < 13; l++) { _%>
+                    <button class="glide__bullet" data-glide-dir="=<%= [l] %>"></button>
+                    <%_ } _%>
                   </div>
               </div>
             </div>

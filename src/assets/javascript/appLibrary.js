@@ -197,5 +197,3 @@ window.addEventListener('load', () => {
     }
   })();
 });
-
-console.log("jjl");

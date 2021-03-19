@@ -13,7 +13,7 @@
     "browserslist": [
         "defaults",
         "last 2 versions",
-        "ie > 10"
+        "not IE 11"
     ],
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.13.0",
@@ -40,6 +40,7 @@
         "ejs-loader": "^0.5.0",
         "fast-glob": "^3.2.5",
         "file-loader": "^6.2.0",
+        "filemanager-webpack-plugin": "^4.0.0",
         "glob": "^7.1.6",
         "html-webpack-plugin": "^4.5.2",
         "image-webpack-loader": "^7.0.1",

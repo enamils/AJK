@@ -5,6 +5,7 @@ const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const devMode = process.env.NODE_ENV !== 'production';
@@ -51,6 +52,16 @@ const jsBuild = smp.wrap({
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.ejs'
+    }),
+    new FileManagerPlugin({
+      events: {
+        onEnd: {
+          copy: [
+            { source: "./src/doc/Bulletin_adhesion_AJK.pdf", destination: path.resolve(__dirname, PATHS.dist + "/doc/Bulletin_adhesion_AJK.pdf")},
+            { source: "./src/mail/contact_me.php", destination: path.resolve(__dirname, PATHS.dist + "/mail/contact_me.php")},
+          ],
+        },
+      },
     }),
   ],
   module: {

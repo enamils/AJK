@@ -18,3 +18,7 @@ PATHS:
       "./src/assets/vendor/fontawesome-free/css/all.min.css"
     css:
       - "./src/assets/scss/agency.scss"
+  doc:
+    - "./src/doc/Bulletin_adhesion_AJK.pdf"
+  mail:
+    - "./src/mail/contact_me.php"

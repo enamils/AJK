@@ -1,0 +1,169 @@
+  <%_ const portfolioCard = [
+    {
+      anchor: "portfolioModal1",
+      image: "dons-alimentaires-thumbnail",
+      title: "Opérations Dons Alimentaires",
+      content: "Récolte de fonds pour les démunis"
+    },
+    {
+      anchor: "portfolioModal2",
+      image: "carritatif-ajk-thumbnail",
+      title: "Evènements caritatif",
+      content: "Tournoi de foot - Barbecue"
+    },
+    {
+      anchor: "portfolioModal3",
+      image: "assoc-presentation-thumbnail",
+      title: "Soirée de présentation",
+      content: "Projection des projets"
+    },
+    {
+      anchor: "portfolioModal4",
+      image: "voyage-guinee-thumbnail",
+      title: "Voyage en Guinée",
+      content: "Réportage sur le système sanitaire"
+    },
+    {
+      anchor: "portfolioModal5",
+      image: "gala-ajk-thumbnail",
+      title: "Présentation du Projet du dispensaire",
+      content: "Récolte de fonds"
+    },
+    {
+      anchor: "portfolioModal6",
+      image: "travaux-ajk-thumbnail",
+      title: "Lancement de la construction",
+      content: "Construction du futur poste de santé"
+    },
+    {
+      anchor: "portfolioModal7",
+      image: "travaux-ajk-generaliste-thumbnail",
+      title: "1ère phase de construction du pôle généraliste",
+      content: "Pôle généraliste"
+    },
+    {
+      anchor: "portfolioModal8",
+      image: "travaux-ajk-generaliste-2-thumbnail",
+      title: "2ème phase de construction du pôle généraliste",
+      content: "Pôle généraliste"
+    }
+  ]  _%>
+  <%_ const portfolioTimeLine = [
+    {
+      image: "dons-alimentaires-actions",
+      date: "Mai 2016",
+      title: "Opérations Dons Alimentaires",
+      content: "Récolte de fonds; achat denrées alimentaires pour les populations démunies de Kakandé"
+    },
+    {
+      class: "timeline-inverted",
+      image: "carritatif-ajk-actions",
+      date: "Juillet 2016",
+      title: "Evènement caritatif",
+      content: "Tournois de foot – Barbecue"
+    },
+    {
+      image: "presentation-ajk-actions",
+      date: "Avril 2017",
+      title: "Présentation de l'association",
+      content: "Présentation générale de l’association et de ses projets"
+    },
+    {
+      class: "timeline-inverted",
+      image: "voyage-guinee-actions",
+      date: "Juillet 2017",
+      title: "Voyage en Guinée",
+      content: "Voyage reportage et enquête en Guinée sur le Système de santé"
+    },
+    {
+      image: "gala-ajk-actions",
+      date: "Octobre 2017",
+      title: "Soirée de présentation du Dispensaire",
+      content: "Récolte de fonds"
+    },
+    {
+      class: "timeline-inverted",
+      image: "travaux-ajk-actions",
+      date: "Février 2018",
+      title: "Lancement de la construction",
+      content: "Construction du futur poste de santé Pôle Pharmacie"
+    },
+    {
+      image: "travaux-ajk-2",
+      date: "Janvier 2019",
+      title: "1ère phase de construction du pôle généraliste",
+      content: "Pôle Généraliste"
+    },
+    {
+      class: "timeline-inverted",
+      image: "travaux-ajk-3",
+      date: "Juillet 2020",
+      title: "2ème phase de construction du pôle généraliste",
+      content: "Pôle Généraliste"
+    }
+  ] _%>
+  <section class="bg-light parralax-section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-4">
+          <h2 class="section-heading text-uppercase">Nos actions</h2>
+        </div>
+      </div>
+      <div class="row">
+        <%_ portfolioCard.forEach(card => { _%>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="portfolio-card boxShadow">
+            <a class="portfolio-link" data-toggle="modal" href="#<%= card.anchor %>">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid lazyload" data-src="images/portfolio/<%= card.image %>.jpg" alt="<%= card.image %>">
+            </a>
+            <div class="portfolio-caption">
+              <h4><%= card.title %></h4>
+              <p class="text-muted"><%= card.content %></p>
+            </div>
+          </div>
+        </div>
+        <%_ }); _%>
+      </div>
+      <hr>
+      <div class="row mt-4">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-subheading text-muted">Chronologie des actions réalisées</h3>
+        </div>
+        <div class="col-lg-12">
+          <ul class="timeline">
+          <%_ portfolioTimeLine.forEach(timeline => { _%>
+            <li class="<%= timeline.class %>">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid lazyload" data-src="images/about/<%= timeline.image %>.jpg" alt="<%= timeline.image %>">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="d-block bold date-title"><%= timeline.date %></span>
+                  <h4 class="subheading"><%= timeline.title %></h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    <%= timeline.content %>
+                  </p>
+                </div>
+              </div>
+            </li>
+          <%_ }); _%>
+            <li>
+              <div class="timeline-image">
+                <h4>Notre
+                  <br>Aventure
+                  <br>continue !</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="parralax-section--dbk2 rellax" data-rellax-speed="-2" data-rellax-zindex="-6"></div>
+  </section>

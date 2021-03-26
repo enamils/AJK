@@ -4,8 +4,8 @@ const glob = require("glob");
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
-// const PurgecssPlugin = require("purgecss-webpack-plugin");
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const devMode = process.env.NODE_ENV !== 'production';
@@ -19,9 +19,6 @@ function loadConfig() {
 }
 
 const {PATHS} = loadConfig();
-const PATH_SRC = {
-  src: path.resolve(__dirname, PATHS.src)
-}
 
 const jsBuild = smp.wrap({
   devtool: devMode ? 'eval-cheap-module-source-map' : false,
@@ -32,16 +29,14 @@ const jsBuild = smp.wrap({
   },
   output: {
     path: path.resolve(__dirname, PATHS.dist),
-    filename: "./js/[name].js",
-    publicPath: "/dist/"
+    filename: "js/[name].js",
+    publicPath: "dist/"
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "./public"),
+    contentBase: path.resolve(__dirname, PATHS.dist),
+    watchContentBase: true,
     historyApiFallback: true,
-    port: 8080,
-    hot: true,
     compress: true,
-    open: true,
     disableHostCheck: true
   },
   target: 'web',
@@ -52,14 +47,22 @@ const jsBuild = smp.wrap({
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery',
+      'window.jQuery': 'jquery'
     }),
-    // new CleanWebpackPlugin(),
-    // new PurgecssPlugin({
-    //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
-    //   // only: ['jquery', 'bootstrap']
-    // }),
-    // new BundleAnalyzerPlugin()
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'index.ejs'
+    }),
+    new FileManagerPlugin({
+      events: {
+        onEnd: {
+          copy: [
+            { source: "./src/doc/Bulletin_adhesion_AJK.pdf", destination: path.resolve(__dirname, PATHS.dist + "/doc/Bulletin_adhesion_AJK.pdf")},
+            { source: "./src/mail/contact_me.php", destination: path.resolve(__dirname, PATHS.dist + "/mail/contact_me.php")},
+          ],
+        },
+      },
+    }),
   ],
   module: {
     rules: [
@@ -67,7 +70,21 @@ const jsBuild = smp.wrap({
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
-      }
+      },
+      {
+        test: /\.ejs$/,
+        use: [
+          {
+            loader: 'compile-ejs-loader',
+            options: {
+              'htmlminOptions': {
+                removeComments: true,
+                preventAttributesEscaping: true
+              }
+            }
+          }
+        ],
+      },
     ]
   }
 });
@@ -86,7 +103,7 @@ const cssAssetsBuild = smp.wrap({
   },
   output: {
     path: path.resolve(__dirname, PATHS.dist),
-    filename: "./js/[name].js",
+    filename: "js/[name].js",
     publicPath: "/dist/"
   },
   module: {
@@ -95,10 +112,7 @@ const cssAssetsBuild = smp.wrap({
         test: /\.(sa|sc|c)ss$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
-             options: {
-              esModule: false,
-            },
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: "css-loader",
@@ -173,9 +187,6 @@ const cssAssetsBuild = smp.wrap({
       name: "ASSETS & CSS Build",
       color: "yellow"
     }),
-    // new PurgecssPlugin({
-    //   paths: glob.sync(`${PATH_SRC.src}/**/*`, { nodir: true }),
-    // }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
       chunkFilename: 'css/[id].css',

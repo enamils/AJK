@@ -28,12 +28,11 @@ const jsBuild = smp.wrap({
     app: PATHS.javascript
   },
   output: {
-    path: path.resolve(__dirname, PATHS.dist),
+    path: path.resolve(__dirname, PATHS.public),
     filename: "js/[name].js",
-    publicPath: "dist/"
   },
   devServer: {
-    contentBase: path.resolve(__dirname, PATHS.dist),
+    contentBase: path.resolve(__dirname, PATHS.public),
     watchContentBase: true,
     historyApiFallback: true,
     compress: true,
@@ -42,7 +41,8 @@ const jsBuild = smp.wrap({
   target: 'web',
   plugins: [
     new WebpackBar({
-      name: "JS Build"
+      name: "JS & EJS Build",
+      color: "salmon"
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -57,8 +57,8 @@ const jsBuild = smp.wrap({
       events: {
         onEnd: {
           copy: [
-            { source: "./src/doc/Bulletin_adhesion_AJK.pdf", destination: path.resolve(__dirname, PATHS.dist + "/doc/Bulletin_adhesion_AJK.pdf")},
-            { source: "./src/mail/contact_me.php", destination: path.resolve(__dirname, PATHS.dist + "/mail/contact_me.php")},
+            { source: "./src/doc/Bulletin_adhesion_AJK.pdf", destination: path.resolve(__dirname, PATHS.public + "/doc/Bulletin_adhesion_AJK.pdf")},
+            { source: "./src/mail/contact_me.php", destination: path.resolve(__dirname, PATHS.public + "/mail/contact_me.php")},
           ],
         },
       },
@@ -102,9 +102,8 @@ const cssAssetsBuild = smp.wrap({
     fonts: glob.sync(PATHS.assets.fonts)
   },
   output: {
-    path: path.resolve(__dirname, PATHS.dist),
+    path: path.resolve(__dirname, PATHS.public),
     filename: "js/[name].js",
-    publicPath: "/dist/"
   },
   module: {
     rules: [
@@ -185,7 +184,7 @@ const cssAssetsBuild = smp.wrap({
   plugins: [
     new WebpackBar({
       name: "ASSETS & CSS Build",
-      color: "yellow"
+      color: "aqua"
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',

@@ -7,16 +7,16 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 40px;
-    width: 2px;
-    margin-left: -1.5px;
+    left: rem-calc(40);
+    width: rem-calc(2);
+    margin-left: rem-calc(-1.5);
     content: '';
     background-color: $gray-200;
   }
   > li {
     position: relative;
-    min-height: 50px;
-    margin-bottom: 50px;
+    min-height: rem-calc(50);
+    margin-bottom: rem-calc(50);
     &:after,
     &:before {
       display: table;
@@ -29,18 +29,18 @@
       position: relative;
       float: right;
       width: 100%;
-      padding: 0 20px 0 100px;
+      padding: 0 rem-calc(20) 0 rem-calc(100);
       text-align: left;
       &:before {
         right: auto;
-        left: -15px;
-        border-right-width: 15px;
+        left: rem-calc(-15);
+        border-right-width: rem-calc(15);
         border-left-width: 0;
       }
       &:after {
         right: auto;
-        left: -14px;
-        border-right-width: 14px;
+        left: rem-calc(-14);
+        border-right-width: rem-calc(14);
         border-left-width: 0;
       }
     }
@@ -48,8 +48,8 @@
       position: absolute;
       z-index: 100;
       left: 0;
-      width: 80px;
-      height: 80px;
+      width: rem-calc(80);
+      height: rem-calc(80);
       margin-left: 0;
       text-align: center;
       color: $white;
@@ -57,26 +57,26 @@
       border-radius: 100%;
       background-color: $orange-ajk;
       h4 {
-        font-size: 10px;
-        line-height: 14px;
-        margin-top: 12px;
+        font-size: rem-calc(10);
+        line-height: rem-calc(14);
+        margin-top: rem-calc(12);
       }
     }
 
     &.timeline-inverted > .timeline-panel {
       float: right;
-      padding: 0 20px 0 100px;
+      padding: 0 rem-calc(20) 0 rem-calc(100);
       text-align: left;
       &:before {
         right: auto;
-        left: -15px;
+        left: rem-calc(-15);
         border-right-width: 15px;
         border-left-width: 0;
       }
       &:after {
         right: auto;
-        left: -14px;
-        border-right-width: 14px;
+        left: rem-calc(-14);
+        border-right-width: rem-calc(14);
         border-left-width: 0;
       }
     }
@@ -88,7 +88,7 @@
   .timeline-heading {
     h4 {
       margin-top: 0;
-      font-size: 20px;
+      font-size: rem-calc(20);
       color: $orange-ajk;
       &.subheading {
         text-transform: none;
@@ -119,23 +119,23 @@
       .timeline-panel {
         float: left;
         width: 41%;
-        padding: 0 20px 20px 30px;
+        padding: 0 rem-calc(20) rem-calc(20) rem-calc(30);
         text-align: right;
       }
       .timeline-image {
         left: 50%;
         width: 100px;
         height: 100px;
-        margin-left: -50px;
+        margin-left: rem-calc(-50);
         h4 {
-          font-size: 13px;
-          line-height: 18px;
-          margin-top: 16px;
+          font-size: rem-calc(13);
+          line-height: rem-calc(18);
+          margin-top: rem-calc(16);
         }
       }
       &.timeline-inverted > .timeline-panel {
         float: right;
-        padding: 0 30px 20px 20px;
+        padding: 0 rem-calc(30) rem-calc(20) rem-calc(20);
         text-align: left;
       }
     }
@@ -147,20 +147,20 @@
     > li {
       min-height: 150px;
       .timeline-panel {
-        padding: 0 20px 20px;
+        padding: 0 rem-calc(20) rem-calc(20);
       }
       .timeline-image {
         width: 150px;
         height: 150px;
-        margin-left: -75px;
+        margin-left: rem-calc(-75);
         h4 {
-          font-size: 18px;
-          line-height: 26px;
-          margin-top: 30px;
+          font-size: rem-calc(18);
+          line-height: rem-calc(26);
+          margin-top: rem-calc(30);
         }
       }
       &.timeline-inverted > .timeline-panel {
-        padding: 0 20px 20px;
+        padding: 0 rem-calc(20) rem-calc(20);
       }
     }
   }
@@ -170,18 +170,18 @@
     > li {
       min-height: 170px;
       .timeline-panel {
-        padding: 0 20px 20px 100px;
+        padding: 0 rem-calc(20) rem-calc(20) rem-calc(100);
       }
       .timeline-image {
         width: 170px;
         height: 170px;
-        margin-left: -85px;
+        margin-left: rem-calc(-85);
         h4 {
-          margin-top: 40px;
+          margin-top: rem-calc(40);
         }
       }
       &.timeline-inverted > .timeline-panel {
-        padding: 0 100px 20px 20px;
+        padding: 0 rem-calc(100) rem-calc(20) rem-calc(20);
       }
     }
   }

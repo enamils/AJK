@@ -1,10 +1,10 @@
 // Styling for the portfolio section
 #portfolio {
   .portfolio-item {
-    margin: 0 0 15px;
+    margin: 0 0 rem-calc(15);
 
     @include mediaQuery(mobile-end) {
-      margin: 0 0 30px;
+      margin: 0 0 rem-calc(30);
     }
 
     .portfolio-card {
@@ -32,16 +32,16 @@
           opacity: 1;
         }
         .portfolio-hover-content {
-          font-size: 20px;
+          font-size: rem-calc(20);
           position: absolute;
           top: 50%;
           width: 100%;
-          height: 20px;
-          margin-top: -12px;
+          height: rem-calc(20);
+          margin-top: rem-calc(-12);
           text-align: center;
           color: $white;
           i {
-            margin-top: -12px;
+            margin-top: rem-calc(-12);
           }
           h3,
           h4 {
@@ -66,12 +66,12 @@
       h4 {
         margin: 0;
         text-transform: none;
-        font-size: 18px;
+        font-size: rem-calc(18);
         color: $red-mauve-ajk;
         @include caviar-dream-font;
       }
       p {
-        font-size: 16px;
+        font-size: rem-calc(16);
         font-style: italic;
         margin: 0;
       }
@@ -93,27 +93,27 @@
     text-align: center;
     h2 {
       font-size: 2em;
-      margin-bottom: 15px;
+      margin-bottom: rem-calc(15);
       @include mediaQuery(tablet) {
         font-size: 3em;
       }
     }
     p {
-      margin-bottom: 30px;
+      margin-bottom: rem-calc(30);
       text-align: justify;
     }
     p.item-intro {
-      font-size: 16px;
+      font-size: rem-calc(16);
       font-style: italic;
-      margin: 20px 0 30px;
+      margin: rem-calc(20) 0 rem-cal(30);
       text-align: center;
     }
     ul.list-inline {
       margin-top: 0;
-      margin-bottom: 30px;
+      margin-bottom: rem-calc(30);
     }
     img {
-      margin-bottom: 30px;
+      margin-bottom: rem-calc(30);
     }
     button {
       cursor: pointer;
@@ -121,10 +121,10 @@
   }
   .close-modal {
     position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
+    top: rem-calc(25);
+    right: rem-calc(25);
+    width: rem-calc(75);
+    height: rem-calc(75);
     cursor: pointer;
     background-color: transparent;
     &:hover {
@@ -133,17 +133,17 @@
     .lr {
       /* Safari and Chrome */
       z-index: 1051;
-      width: 1px;
-      height: 75px;
-      margin-left: 35px;
+      width: rem-calc(1);
+      height: rem-calc(75);
+      margin-left: rem-calc(35);
       /* IE 9 */
       transform: rotate(45deg);
       background-color: $orange-ajk;
       .rl {
         /* Safari and Chrome */
         z-index: 1052;
-        width: 1px;
-        height: 75px;
+        width: rem-calc(1);
+        height: rem-calc(75);
         /* IE 9 */
         transform: rotate(90deg);
         background-color: $orange-ajk;

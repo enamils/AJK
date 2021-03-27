@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="L’association des jeunes de kakandé est une association à but non lucratif créée par l’initiative de jeune français d’origine guinéenne souhaitant contribuer
+    au développement du village de leurs parents. L’association des jeunes de kakandé a pour vocation de mener des projets humanitaires dans des domaines de
+    premières nécessités tels que la santé, l’éducation, mais aussi tout ce qui contribue au développement durable de la région
+    de Kakandé situé en Guinée.">
+  <meta name="author" content="">
+
+  <title>Association des Jeunes de Kakandé - AJK</title>
+
+  <link rel="icon" type="image/x-icon" href="images/logos/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logos/favicon.ico" />
+
+  <!-- Custom fonts for this template -->
+  <link href="css/bootstrapVendor.css" rel="stylesheet" type="text/css">
+  <link href="css/fontVendor.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/app.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123646088-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123646088-1');
+  </script>
+
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Montserrat']
+      }
+    });
+  </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <%- require('./src/template/NavHeader/nav.ejs')() %>
+
+  <!-- Header -->
+  <%- require('./src/template/NavHeader/header.ejs')() %>
+
+  <!-- Association -->
+  <%- require('./src/template/Association/association.ejs')() %>
+
+  <!-- Nos Actions -->
+  <%- require('./src/template/Actions/ourActions.ejs')() %>
+
+  <!-- Le Projet -->
+  <%- require('./src/template/Project/ourProject.ejs')() %>
+
+  <!-- Médias -->
+  <%- require('./src/template/Media/media.ejs')() %>
+
+  <!-- Nous Soutenir -->
+  <%- require('./src/template/Support/supportUs.ejs')() %>
+
+  <!-- Contact -->
+  <%- require('./src/template/Contact/contactUs.ejs')() %>
+
+  <!-- Footer -->
+  <%- require('./src/template/Footer/footer.ejs')() %>
+
+  <!-- Portfolio Modals -->
+  <%- require('./src/template/Modal/modal.ejs')() %>
+
+</body>
+
+</html>

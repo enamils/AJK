@@ -2,17 +2,17 @@
 #mainNav {
   background-color: $red-mauve-ajk;
   @include mediaQuery(tablet-desktop) {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: rem-calc(25);
+    padding-bottom: rem-calc(25);
     transition: padding-top 0.3s,
     padding-bottom 0.3s;
     border: none;
     background-color: transparent;
   }
   .navbar-toggler {
-    font-size: 12px;
+    font-size: rem-calc(12);
     right: 0;
-    padding: 13px;
+    padding: rem-calc(13);
     text-transform: uppercase;
     color: $white;
     border: 0;
@@ -34,8 +34,8 @@
 
     &.logo-ajk {
       text-indent: -9999px;
-      width: 80px;
-      height: 80px;
+      width: rem-calc(80);
+      height: rem-calc(80);
       background: url('../images/logos/logo-final-ajk.svg') no-repeat top left;
       background-size: contain;
 
@@ -53,7 +53,7 @@
       .nav-link {
         font-size: 90%;
         font-weight: 600;
-        letter-spacing: 1px;
+        letter-spacing: rem-calc(1);
         color: $white;
         @include caviar-dream-font;
 
@@ -93,8 +93,8 @@
 
     .navbar-brand {
       &.logo-ajk {
-        width: 60px;
-        height: 60px;
+        width: rem-calc(60);
+        height: rem-calc(60);
       }
     }
   }

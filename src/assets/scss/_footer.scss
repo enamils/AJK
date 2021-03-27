@@ -1,16 +1,16 @@
 // Styling for the footer
 footer {
-  padding: 25px 0;
+  padding: rem-calc(25) 0;
   text-align: center;
   span.copyright {
     font-size: 80%;
-    line-height: 40px;
+    line-height: rem-calc(40);
     text-transform: none;
     @include caviar-dream-font;
   }
   ul.quicklinks {
     font-size: 90%;
-    line-height: 40px;
+    line-height: rem-calc(40);
     margin-bottom: 0;
     text-transform: none;
   }
@@ -20,11 +20,11 @@ ul.social-buttons {
   margin-bottom: 0;
   li {
     a {
-      font-size: 20px;
-      line-height: 40px;
+      font-size: rem-calc(20);
+      line-height: rem-calc(40);
       display: block;
-      width: 40px;
-      height: 40px;
+      width: rem-calc(40);
+      height: rem-calc(40);
       transition: all 0.3s;
       color: $white;
       border-radius: 100%;

@@ -1,0 +1,49 @@
+  <%_ const socialMediaFooter = [
+    {
+      link: "https://www.facebook.com/AJK-Association-des-Jeunes-de-kakand%C3%A9-1890930947858951/",
+      icon: "fa-facebook-f"
+    },
+    {
+      link: "https://www.instagram.com/association.ajk/",
+      icon: "fa-instagram"
+    },
+    {
+      link: "https://www.youtube.com/channel/UCLvj9n7eiTphuqb_oaZTMxA",
+      icon: "fa-youtube"
+    },
+    {
+      link: "https://twitter.com/ajk_association",
+      icon: "fa-twitter"
+    }
+  ]  _%>
+  <footer>
+    <div class="container">
+      <div class="row text-color_white">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-inline social-buttons">
+                <%_ socialMediaFooter.forEach(item => { _%>
+                  <li class="list-inline-item">
+                    <a href="<%= item.link %>" target="_blank">
+                      <i class="fab <%= item.icon %>"></i>
+                    </a>
+                  </li>
+                <%_ }); _%>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline quicklinks">
+                <li class="list-inline-item">
+                  <a href="mailto:contact@associationjeuneskakande.org">contact@associationjeuneskakande.org</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <span class="copyright">Copyright 2018-<span class="footer-copyright"></span> &copy; AJK - Tous droits réservés</span>
+        </div>
+      </div>
+    </div>
+  </footer>

@@ -4,6 +4,12 @@
   background-size: cover;
 }
 
+// Rem Calc
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
 // Font Mixins
 @mixin body-font {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;

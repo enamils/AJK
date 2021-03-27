@@ -17,7 +17,7 @@ Icon
 *.css.map
 
 ### FILES ###
-public/dist/
+public/
 
 # CMake
 cmake-build-debug/

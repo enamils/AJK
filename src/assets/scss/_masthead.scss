@@ -28,41 +28,41 @@ header.masthead {
     }
 
     .intro-lead-in {
-      font-size: 22px;
+      font-size: rem-calc(22);
       font-style: italic;
-      line-height: 22px;
-      margin-bottom: 25px;
+      line-height: rem-calc(22);
+      margin-bottom: rem-calc(25);
 
       @include mediaQuery(tablet) {
-        font-size: 30px;
-        line-height: 40px;
-        margin-bottom: 10px;
+        font-size: rem-calc(30);
+        line-height: rem-calc(40);
+        margin-bottom: rem-calc(10);
       }
     }
 
     .intro-heading {
-      font-size: 20px;
+      font-size: rem-calc(20);
       font-weight: 700;
-      line-height: 50px;
-      margin-bottom: 25px;
+      line-height: rem-calc(50);
+      margin-bottom: rem-calc(25);
       @include caviar-dream-font;
 
       @include mediaQuery(tablet) {
-        font-size: 25px;
-        line-height: 75px;
+        font-size: rem-calc(25);
+        line-height: rem-calc(75);
       }
     }
 
     h1 {
-      font-size: 30px;
-      margin-bottom: 25px;
+      font-size: rem-calc(30);
+      margin-bottom: rem-calc(25);
       color: $black-ajk;
       @include caviar-dream-font;
 
       @include mediaQuery(tablet) {
-        font-size: 50px;
-        margin-top: 10px;
-        margin-bottom: 50px;
+        font-size: rem-calc(50);
+        margin-top: rem-calc(10);
+        margin-bottom: rem-calc(50);
       }
     }
   }

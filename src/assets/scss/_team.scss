@@ -1,6 +1,6 @@
 // Styling for the team section
 .team-member {
-  margin-bottom: 50px;
+  margin-bottom: rem-calc(50);
   text-align: center;
   img {
     width: 225px;
@@ -8,7 +8,7 @@
     border: 7px solid $white;
   }
   h4 {
-    margin-top: 25px;
+    margin-top: rem-calc(25);
     margin-bottom: 0;
     text-transform: none;
   }

@@ -8,10 +8,10 @@
     color: $white;
   }
   .form-group {
-    margin-bottom: 25px;
+    margin-bottom: rem-calc(25);
     input,
     textarea {
-      padding: 20px;
+      padding: rem-calc(20);
     }
     input.form-control {
       height: auto;

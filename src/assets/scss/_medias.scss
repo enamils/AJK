@@ -21,7 +21,8 @@
     .iframe-container {
         position: relative;
         padding-bottom: 56.25%; /* ratio 16/9 */
-        height: 0; overflow: hidden;
+        height: 0;
+        overflow: hidden;
         clear: both;
     }
 

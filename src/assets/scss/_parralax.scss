@@ -4,9 +4,6 @@
   &-dbk2,
   &-dbk3 {
       height: 500px;
-      // @include mediaQuery(mobile-end) {
-      //   background-position: left;
-      // }
   }
 
   &-dbk1 {
@@ -18,7 +15,6 @@
   &-dbk2 {
     background: url('../images/ajk-bg/dabankou-2-parrallax.jpg') no-repeat center;
     background-size: cover;
-    // margin-top: 1rem;
   }
 
   &-dbk3 {

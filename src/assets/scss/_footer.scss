@@ -2,12 +2,14 @@
 footer {
   padding: rem-calc(25) 0;
   text-align: center;
+
   span.copyright {
     font-size: 80%;
     line-height: rem-calc(40);
     text-transform: none;
     @include caviar-dream-font;
   }
+
   ul.quicklinks {
     font-size: 90%;
     line-height: rem-calc(40);
@@ -18,6 +20,7 @@ footer {
 
 ul.social-buttons {
   margin-bottom: 0;
+
   li {
     a {
       font-size: rem-calc(20);
@@ -30,6 +33,7 @@ ul.social-buttons {
       border-radius: 100%;
       outline: none;
       background-color: $gray-900;
+
       &:active,
       &:focus,
       &:hover {

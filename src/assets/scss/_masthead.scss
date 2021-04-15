@@ -7,15 +7,19 @@ header.masthead {
   @include mediaIphone(iPhone6) {
     height: auto;
   }
+
   @include mediaIphone(iPhoneX) {
     height: auto;
   }
+
   @include mediaIphone(iPhone8) {
     height: auto;
   }
+
   @include mediaIphone(iPhone6Plus) {
     height: auto;
   }
+
   @include background-cover;
 
   .intro-text {

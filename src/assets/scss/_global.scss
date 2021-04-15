@@ -11,6 +11,7 @@ p {
 
 a {
   color: $blue-ajk;
+
   &:hover {
     color: darken($primary, 10%);
   }
@@ -87,6 +88,7 @@ section {
 .btn-primary {
   background-color: $orange-ajk;
   border-color: $orange-ajk;
+
   &:active,
   &:focus,
   &:hover {
@@ -94,6 +96,7 @@ section {
     border-color: darken($primary, 7.5%) !important;
     color: $white;
   }
+
   &:active,
   &:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
@@ -150,10 +153,12 @@ img {
     @include mediaQuery(tablet) {
       max-width: 25%;
     }
+
     @include mediaQuery(desktop-wide) {
       max-width: 15%;
     }
   }
+
   &.responsive-map-img {
     max-width: 100%;
 
@@ -161,6 +166,7 @@ img {
       max-width: 45%;
     }
   }
+
   &.responsive-img-maquette {
     max-width: 100%;
     margin: 0 auto;
@@ -169,6 +175,7 @@ img {
       max-width: 75%;
     }
   }
+
   &.responsive-img-other {
     max-width: 100%;
   }

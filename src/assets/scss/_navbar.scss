@@ -1,6 +1,7 @@
 // Styling for the navbar
 #mainNav {
   background-color: $red-mauve-ajk;
+
   @include mediaQuery(tablet-desktop) {
     padding-top: rem-calc(25);
     padding-bottom: rem-calc(25);
@@ -9,6 +10,7 @@
     border: none;
     background-color: transparent;
   }
+
   .navbar-toggler {
     font-size: rem-calc(12);
     right: 0;
@@ -17,10 +19,12 @@
     color: $white;
     border: 0;
     background-color: $orange-ajk;
+
     @include caviar-dream-font;
   }
   .navbar-brand {
     color: $orange-ajk;
+
     &.active,
     &:active,
     &:focus,
@@ -49,6 +53,7 @@
     @include mediaQuery(tablet-end) {
       margin-top: 1em;
     }
+
     .nav-item {
       .nav-link {
         font-size: 90%;

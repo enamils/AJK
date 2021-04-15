@@ -1,5 +1,6 @@
 // Styling for the portfolio section
 #portfolio {
+
   .portfolio-item {
     margin: 0 0 rem-calc(15);
 
@@ -21,6 +22,7 @@
       position: relative;
       display: block;
       cursor: pointer;
+
       .portfolio-hover {
         position: absolute;
         width: 100%;
@@ -28,9 +30,11 @@
         transition: all ease 0.5s;
         opacity: 0;
         background: fade-out($orange-ajk, .1);
+
         &:hover {
           opacity: 1;
         }
+
         .portfolio-hover-content {
           font-size: rem-calc(20);
           position: absolute;
@@ -40,13 +44,16 @@
           margin-top: rem-calc(-12);
           text-align: center;
           color: $white;
+
           i {
             margin-top: rem-calc(-12);
           }
+
           h3,
           h4 {
             margin: 0;
           }
+
         }
       }
     }
@@ -60,9 +67,11 @@
       padding: 1rem;
       text-align: center;
       background-color: $white;
+
       @include mediaQuery($desktop-wide) {
         min-height: 135px;
       }
+
       h4 {
         margin: 0;
         text-transform: none;
@@ -70,13 +79,16 @@
         color: $red-mauve-ajk;
         @include caviar-dream-font;
       }
+
       p {
         font-size: rem-calc(16);
         font-style: italic;
         margin: 0;
       }
+
     }
   }
+
   * {
     z-index: 2;
   }
@@ -84,13 +96,16 @@
 
 .portfolio-modal {
   padding-right: 0px !important;
+
   .modal-dialog {
     margin: 1rem;
     max-width: 100vw;
   }
+
   .modal-content {
     padding: 100px 0;
     text-align: center;
+
     h2 {
       font-size: 2em;
       margin-bottom: rem-calc(15);
@@ -98,27 +113,33 @@
         font-size: 3em;
       }
     }
+
     p {
       margin-bottom: rem-calc(30);
       text-align: justify;
     }
+
     p.item-intro {
       font-size: rem-calc(16);
       font-style: italic;
       margin: rem-calc(20) 0 rem-cal(30);
       text-align: center;
     }
+
     ul.list-inline {
       margin-top: 0;
       margin-bottom: rem-calc(30);
     }
+
     img {
       margin-bottom: rem-calc(30);
     }
+
     button {
       cursor: pointer;
     }
   }
+
   .close-modal {
     position: absolute;
     top: rem-calc(25);
@@ -127,9 +148,11 @@
     height: rem-calc(75);
     cursor: pointer;
     background-color: transparent;
+
     &:hover {
       opacity: 0.3;
     }
+
     .lr {
       /* Safari and Chrome */
       z-index: 1051;

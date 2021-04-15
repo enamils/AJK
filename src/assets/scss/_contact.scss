@@ -4,42 +4,30 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   .section-heading {
     color: $white;
   }
+
   .form-group {
     margin-bottom: rem-calc(25);
+
     input,
     textarea {
       padding: rem-calc(20);
     }
+
     input.form-control {
       height: auto;
     }
+
     textarea.form-control {
       height: 248px;
     }
   }
+
   .form-control:focus {
     border-color: $primary;
     box-shadow: none;
-  }
-  ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-  }
-  :-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    /* Firefox 18- */
-  }
-  ::-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    /* Firefox 19+ */
-  }
-  :-ms-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
   }
 }

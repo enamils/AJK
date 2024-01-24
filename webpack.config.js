@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const glob = require("glob");
 const WebpackBar = require('webpackbar');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+//const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -11,7 +11,7 @@ const FileManagerPlugin = require('filemanager-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 const fs = require("fs");
 const yaml = require("js-yaml");
-const smp = new SpeedMeasurePlugin();
+//const smp = new SpeedMeasurePlugin();
 
 function loadConfig() {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
@@ -20,7 +20,7 @@ function loadConfig() {
 
 const {PATHS} = loadConfig();
 
-const jsBuild = smp.wrap({
+const jsBuild = {
   devtool: devMode ? 'eval-cheap-module-source-map' : false,
   entry: {
     // JS
@@ -32,17 +32,19 @@ const jsBuild = smp.wrap({
     filename: "js/[name].js",
   },
   devServer: {
-    contentBase: path.resolve(__dirname, PATHS.public),
-    watchContentBase: true,
-    historyApiFallback: true,
-    compress: true,
-    disableHostCheck: true
+    static: {
+      directory: path.resolve(__dirname, PATHS.public),
+      staticOptions: {},
+      serveIndex: true,
+      watch: true,
+    },
+    allowedHosts: "all"
   },
   target: 'web',
   plugins: [
     new WebpackBar({
       name: "JS & EJS Build",
-      color: "salmon"
+      color: "green"
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -87,9 +89,9 @@ const jsBuild = smp.wrap({
       },
     ]
   }
-});
+};
 
-const cssAssetsBuild = smp.wrap({
+const cssAssetsBuild = {
   devtool: devMode ? 'source-map' : false,
   entry: {
     // CSS
@@ -184,7 +186,7 @@ const cssAssetsBuild = smp.wrap({
   plugins: [
     new WebpackBar({
       name: "ASSETS & CSS Build",
-      color: "aqua"
+      color: "blue"
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
@@ -194,7 +196,7 @@ const cssAssetsBuild = smp.wrap({
     //   dry: true,
     // }),
   ],
-});
+};
 
 if (devMode) {
   jsBuild.plugins.push(new webpack.HotModuleReplacementPlugin()),

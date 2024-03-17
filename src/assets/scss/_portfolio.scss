@@ -103,7 +103,6 @@
   }
 
   .modal-content {
-    padding: 100px 0;
     text-align: center;
 
     h2 {
@@ -137,40 +136,6 @@
 
     button {
       cursor: pointer;
-    }
-  }
-
-  .close-modal {
-    position: absolute;
-    top: rem-calc(25);
-    right: rem-calc(25);
-    width: rem-calc(75);
-    height: rem-calc(75);
-    cursor: pointer;
-    background-color: transparent;
-
-    &:hover {
-      opacity: 0.3;
-    }
-
-    .lr {
-      /* Safari and Chrome */
-      z-index: 1051;
-      width: rem-calc(1);
-      height: rem-calc(75);
-      margin-left: rem-calc(35);
-      /* IE 9 */
-      transform: rotate(45deg);
-      background-color: $orange-ajk;
-      .rl {
-        /* Safari and Chrome */
-        z-index: 1052;
-        width: rem-calc(1);
-        height: rem-calc(75);
-        /* IE 9 */
-        transform: rotate(90deg);
-        background-color: $orange-ajk;
-      }
     }
   }
 }

@@ -1,9 +1,23 @@
 # AJK Start Up Install
 
-## Status
+## Available Scripts
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-agency/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-agency.svg)](https://www.npmjs.com/package/startbootstrap-agency)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-agency.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-agency)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-agency/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-agency)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-agency/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-agency?type=dev)
+In the project directory, you can run:
+
+### `yarn run start`
+
+Runs the app in the development mode.\
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+### `yarn run build`
+
+Builds the app for developpement to the `public` folder.\
+
+### `yarn run prod`
+
+Builds the app for production to the `public` folder.\
+It optimizes the build for the best performance.
+
+### `yarn run clean`
+
+Clean `node_modules`, `public` folder & re-install packages.

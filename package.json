@@ -3,10 +3,9 @@
     "name": "ajk-agency",
     "version": "7.0.0",
     "scripts": {
-        "clean": "rm -rf node_modules && yarn",
+        "clean": "rm -rf node_modules && rm -rf public/* && yarn",
         "build": "webpack --mode development --config webpack.config.js",
         "prod": "webpack --mode production --config webpack.config.js",
-        "watch": "webpack --watch --config webpack.config.js",
         "start": "webpack serve --mode development --config webpack.config.js"
     },
     "description": "Package for AJK website",

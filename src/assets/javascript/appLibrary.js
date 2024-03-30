@@ -3,7 +3,6 @@ import 'lazysizes';
 import SmoothScroll from 'smooth-scroll';
 import Rellax from 'rellax';
 import { Player, YouTubeProvider } from '@vime-js/lite';
-//import Scrollbar from 'smooth-scrollbar';
 
 /*---  GLIDE JS  --*/
 
@@ -32,7 +31,6 @@ for (let el of glideClass) {
   new Glide(el, glideConfig).mount();
 }
 
-console.log("zzzz");
 
 /*---  SCROLLING   --*/
 
@@ -46,10 +44,6 @@ new SmoothScroll('a.js-scroll-trigger[href^="#"]:not([href="#"])', {
   updateURL: false
 });
 
-// Scrollbar.init(document.querySelector('a.js-scroll-trigger[href^="#"]:not([href="#"]'), {
-//   continuousScrolling: false,
-//   damping: 0.5,
-// });
 
 /*---  PARRALAX   --*/
 

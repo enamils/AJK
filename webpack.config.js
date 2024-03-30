@@ -26,8 +26,8 @@ const jsBuild = {
   devtool: devMode ? 'eval-cheap-module-source-map' : false,
   entry: {
     // JS
+    library: PATHS.javascript,
     vendor: PATHS.vendor,
-    app: PATHS.javascript
   },
   output: {
     path: path.resolve(__dirname, PATHS.public),
@@ -40,9 +40,12 @@ const jsBuild = {
       serveIndex: true,
       watch: true,
     },
+    client: {
+      logging: 'info',
+      overlay: true,
+    },
     allowedHosts: "all"
   },
-  target: 'web',
   plugins: [
     new WebpackBar({
       name: "JS & EJS Build",
@@ -167,6 +170,7 @@ const cssAssetsBuild = {
     ]
   },
   optimization: {
+    nodeEnv: 'production',
     minimizer: [
       "...",
       new ImageMinimizerPlugin({

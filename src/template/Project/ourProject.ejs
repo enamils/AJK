@@ -43,7 +43,7 @@
               <span class="d-block bold italic mt-3">Carte du village de Dabankou vue du ciel</span>
             </div>
             <p>
-              <img class="float-md-left responsive-map-img mb-3 mr-md-3 roundbox boxShadow lazyload"
+              <img class="float-md-start responsive-map-img mb-3 me-md-3 roundbox boxShadow lazyload"
                 data-src="images/project/dabankou-map.png" alt="dabankou-map">
               Les habitants du village manquent de moyen ; ils sont généralement agriculteurs et cultivent arachides,
               piments, aubergines,
@@ -123,12 +123,12 @@
                 </ul>
               </div>
               <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+                <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
               </div>
               <div class="glide__bullets" data-glide-el="controls[nav]">
                 <%_ for(let i = 0; i < 3; i++) { _%>
-                <button class="glide__bullet" data-glide-dir="=<%= [i] %>"></button>
+                <button type="button" class="glide__bullet" data-glide-dir="=<%= [i] %>"></button>
                 <%_ } _%>
               </div>
             </div>
@@ -217,23 +217,21 @@
                   </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
-                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
-                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+                  <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                  <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
                 </div>
                 <div class="glide__bullets" data-glide-el="controls[nav]">
                   <%_ for(let j = 0; j < 5; j++) { _%>
-                  <button class="glide__bullet" data-glide-dir="=<%= [j] %>"></button>
+                  <button type="button" class="glide__bullet" data-glide-dir="=<%= [j] %>"></button>
                   <%_ } _%>
                 </div>
               </div>
               <div class="mt-4">
                 <h4 class="service-heading">Pôle Généraliste</h4>
                 <p class="bold">1<sup>ère</sup> phase</p>
-                <p>La seconde étape est enclenchée ! Fort de cette première expérience, nous avons démarré la 1<sup>ère</sup> de construction
-                  du pôle
-                  généraliste. C'est avec entrain que les ouvriers et les jeunes des villages ont
-                  pu mettre en
-                  pratique la formation aux différentes techniques de construction acquises lors du chantier école. Cette phase se terminera par la pose complète des murs et de la toiture.</p>
+                <p>La seconde étape est lancée ! Forts de notre première expérience, nous avons débuté la construction du pôle généraliste.
+                  Les ouvriers et les jeunes des villages ont pu mettre en pratique les techniques de construction apprises lors du chantier école avec enthousiasme.
+                  Cette phase se conclura par l'achèvement des murs et de la toiture.</p>
                 <span class="block bold italic mt-3 text-center d-md-none">(Vous pouvez slider les images vers la droite ou la gauche)</span>
                 <div class="glide mt-4">
                   <div data-glide-el="track" class="glide__track">
@@ -265,19 +263,18 @@
                     </ul>
                   </div>
                   <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+                    <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                    <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
                   </div>
                   <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <%_ for(let k = 0; k < 12; k++) { _%>
-                    <button class="glide__bullet" data-glide-dir="=<%= [k] %>"></button>
+                    <%_ for(let k = 0; k < 11; k++) { _%>
+                    <button type="button" class="glide__bullet" data-glide-dir="=<%= [k] %>"></button>
                     <%_ } _%>
                   </div>
                 </div>
                 <p class="mt-4 bold">2<sup>ème</sup> phase</p>
-                <p>Place à la troisième étape ! Nous avons opéré un changement d’architecture au niveau de la toiture des bâtiments en construction 
-                  (y compris le pôle pharmacie) pour une plus grande flexibilité.
-                  Un petit plus pour ce pôle généraliste : un banc extérieur a été ajouter sous la véranda.</p>
+                <p>Nous entamons maintenant la troisième étape ! Nous avons modifié l'architecture de la toiture des bâtiments en construction, y compris celle du pôle pharmacie, afin d'offrir une plus grande flexibilité.
+                  De plus, un banc extérieur a été ajouté sous la véranda pour améliorer le pôle généraliste.</p>
                 <span class="block bold italic mt-3 text-center d-md-none">(Vous pouvez slider les images vers la droite ou la gauche)</span>
                 <div class="glide mt-4">
                   <div data-glide-el="track" class="glide__track">
@@ -311,14 +308,124 @@
                     </ul>
                   </div>
                   <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+                    <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                    <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
                   </div>
                   <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <%_ for(let l = 0; l < 13; l++) { _%>
-                    <button class="glide__bullet" data-glide-dir="=<%= [l] %>"></button>
+                    <%_ for(let l = 0; l < 12; l++) { _%>
+                    <button type="button" class="glide__bullet" data-glide-dir="=<%= [l] %>"></button>
                     <%_ } _%>
                   </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h4 class="service-heading">Pôle Spécialiste</h4>
+              <p>Les travaux du pôle spécialiste ont commencé. Ce pôle comprendra une future salle de consultation pour les enfants, une salle de gynécologie,
+                ainsi qu'une salle de formation destinée à sensibiliser la population aux problématiques d'hygiène et de santé.</p>
+              <span class="block bold italic mt-3 text-center d-md-none">(Vous pouvez slider les images vers la droite ou la gauche)</span>
+              <div class="glide mt-4">
+                <div data-glide-el="track" class="glide__track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-38.JPG"
+                      alt="nouveau dispensaire ajk 38"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-39.JPG"
+                      alt="nouveau dispensaire ajk 39"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-40.JPG"
+                      alt="nouveau dispensaire ajk 40"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-41.JPG"
+                      alt="nouveau dispensaire ajk 41"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-42.JPG"
+                      alt="nouveau dispensaire ajk 42"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-43.JPG"
+                      alt="nouveau dispensaire ajk 43"></li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                  <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                  <%_ for(let m = 0; m < 6; m++) { _%>
+                  <button type="button" class="glide__bullet" data-glide-dir="=<%= [m] %>"></button>
+                  <%_ } _%>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h4 class="service-heading">Logement du personnel médical</h4>
+              <p>Pour améliorer le confort du personnel médical qui travaillera dans le futur centre de santé, nous avons construit un logement qui leur est exclusivement réservé.</p>
+              <span class="block bold italic mt-3 text-center d-md-none">(Vous pouvez slider les images vers la droite ou la gauche)</span>
+              <div class="glide mt-4">
+                <div data-glide-el="track" class="glide__track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-44.JPG"
+                      alt="nouveau dispensaire ajk 44"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-45.JPG"
+                      alt="nouveau dispensaire ajk 45"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-46.JPG"
+                      alt="nouveau dispensaire ajk 46"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-47.JPG"
+                      alt="nouveau dispensaire ajk 47"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-48.JPG"
+                      alt="nouveau dispensaire ajk 48"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-49.JPG"
+                      alt="nouveau dispensaire ajk 49"></li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                  <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                  <%_ for(let n = 0; n < 6; n++) { _%>
+                  <button type="button" class="glide__bullet" data-glide-dir="=<%= [n] %>"></button>
+                  <%_ } _%>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h4 class="service-heading">Fret d'équipements médicaux</h4>
+              <p>L’AJK a reçu un don exceptionnel de l’association P.H.A.M.M.
+                Grâce à leur soutien et à leur générosité, nous avons pu obtenir un conteneur de 40 pieds rempli de matériel médical destiné à notre nouveau centre de santé à Dabankou.</p>
+              <span class="block bold italic mt-3 text-center d-md-none">(Vous pouvez slider les images vers la droite ou la gauche)</span>
+              <div class="glide mt-4">
+                <div data-glide-el="track" class="glide__track">
+                  <ul class="glide__slides align-items-center">
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-50.jpg"
+                      alt="nouveau dispensaire ajk 50"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-51.jpg"
+                      alt="nouveau dispensaire ajk 51"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-52.jpg"
+                      alt="nouveau dispensaire ajk 52"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-53.jpg"
+                      alt="nouveau dispensaire ajk 53"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-54.jpg"
+                      alt="nouveau dispensaire ajk 54"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-55.jpg"
+                      alt="nouveau dispensaire ajk 55"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-56.jpg"
+                      alt="nouveau dispensaire ajk 56"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-57.jpg"
+                      alt="nouveau dispensaire ajk 57"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-58.JPG"
+                      alt="nouveau dispensaire ajk 58"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-59.JPG"
+                      alt="nouveau dispensaire ajk 59"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-60.JPG"
+                      alt="nouveau dispensaire ajk 60"></li>
+                    <li class="glide__slide"><img class="lazyload" data-src="images/new-dispensaire/dispensaire-kakande-ajk-61.JPG"
+                      alt="nouveau dispensaire ajk 61"></li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                  <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                  <%_ for(let o = 0; o < 11; o++) { _%>
+                  <button type="button" class="glide__bullet" data-glide-dir="=<%= [o] %>"></button>
+                  <%_ } _%>
+                </div>
               </div>
             </div>
           </div>

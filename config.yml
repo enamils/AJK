@@ -5,7 +5,7 @@ PATHS:
     images: "./src/assets/images/*/*"
     fonts: "./src/assets/fonts/*"
   vendor:
-    - "./src/assets/vendor/jquery/jquery.slim.min.js"
+    - "./src/assets/vendor/jquery/jquery-3.7.1.slim.min.js"
   javascript:
     - "./src/assets/javascript/jqBootstrapValidation.js"
     - "./src/assets/javascript/contact_me.js"

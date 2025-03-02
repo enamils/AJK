@@ -25,7 +25,7 @@
   .navbar-brand {
     color: $orange-ajk;
 
-    &.active,
+    //&.active,
     &:active,
     &:focus,
     &:hover {
@@ -62,7 +62,7 @@
         color: $white;
         @include caviar-dream-font;
 
-        &.active,
+        //&.active,
         &:hover {
           color: $yellow-ajk;
         }

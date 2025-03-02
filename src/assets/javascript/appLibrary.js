@@ -31,6 +31,7 @@ for (let el of glideClass) {
   new Glide(el, glideConfig).mount();
 }
 
+
 /*---  SCROLLING   --*/
 
 // Scrolling
@@ -42,6 +43,7 @@ new SmoothScroll('a.js-scroll-trigger[href^="#"]:not([href="#"])', {
   clip: true,
   updateURL: false
 });
+
 
 /*---  PARRALAX   --*/
 

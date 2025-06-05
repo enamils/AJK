@@ -16,7 +16,7 @@
       icon: "fa-twitter"
     }
   ]  _%>
-  <footer>
+  <footer role="contentinfo">
     <div class="container">
       <div class="row text-color_white">
         <div class="col-lg-8">
@@ -26,7 +26,7 @@
                 <%_ socialMediaFooter.forEach(item => { _%>
                   <li class="list-inline-item">
                     <a href="<%= item.link %>" target="_blank">
-                      <i class="fab <%= item.icon %>"></i>
+                      <i class="fab <%= item.icon %>" aria-hidden="true"></i>
                     </a>
                   </li>
                 <%_ }); _%>

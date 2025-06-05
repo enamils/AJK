@@ -93,7 +93,12 @@ const jsBuild = {
         ],
       },
     ]
-  }
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
 };
 
 const cssAssetsBuild = {

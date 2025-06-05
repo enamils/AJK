@@ -19,7 +19,7 @@
   <!-- Custom fonts for this template -->
   <link href="css/bootstrapVendor.css" rel="stylesheet" type="text/css">
   <link href="css/fontVendor.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="preload" type="text/css">
 
   <!-- Custom styles for this template -->
   <link href="css/app.css" rel="stylesheet">
@@ -57,23 +57,25 @@
   <!-- Header -->
   <%- require('./src/template/NavHeader/header.ejs')() %>
 
-  <!-- Association -->
-  <%- require('./src/template/Association/association.ejs')() %>
+  <main role="main">
+    <!-- Association -->
+    <%- require('./src/template/Association/association.ejs')() %>
 
-  <!-- Nos Actions -->
-  <%- require('./src/template/Actions/ourActions.ejs')() %>
+    <!-- Nos Actions -->
+    <%- require('./src/template/Actions/ourActions.ejs')() %>
 
-  <!-- Le Projet -->
-  <%- require('./src/template/Project/ourProject.ejs')() %>
+    <!-- Le Projet -->
+    <%- require('./src/template/Project/ourProject.ejs')() %>
 
-  <!-- Médias -->
-  <%- require('./src/template/Media/media.ejs')() %>
+    <!-- Médias -->
+    <%- require('./src/template/Media/media.ejs')() %>
 
-  <!-- Nous Soutenir -->
-  <%- require('./src/template/Support/supportUs.ejs')() %>
+    <!-- Nous Soutenir -->
+    <%- require('./src/template/Support/supportUs.ejs')() %>
 
-  <!-- Contact -->
-  <%- require('./src/template/Contact/contactUs.ejs')() %>
+    <!-- Contact -->
+    <%- require('./src/template/Contact/contactUs.ejs')() %>
+  </main>
 
   <!-- Footer -->
   <%- require('./src/template/Footer/footer.ejs')() %>
